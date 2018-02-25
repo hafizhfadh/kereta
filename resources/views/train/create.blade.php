@@ -34,47 +34,43 @@
                       </div>
 
                       <div class="columns">
+
                         <div class="column">
                           <div class="field">
-                            <label class="label">Jumlah Gerbong</label>
+                            <label class="label">Jumlah Gerbong Eksekutif</label>
                             <div class="control">
-                              <input class="input" type="number" name="wagon">
+                              <input class="input" type="number" name="exec_seat">
                             </div>
-                            @if ($errors->has('wagon'))
-                              <p class="help is-danger">{{$errors->first('wagon')}}</p>
+                            @if ($errors->has('exec_seat'))
+                              <p class="help is-danger">{{$errors->first('exec_seat')}}</p>
                             @endif
                           </div>
                         </div>
 
                         <div class="column">
                           <div class="field">
-                            <label class="label">Jumlah Kursi (Per-Gerbong)</label>
+                            <label class="label">Jumlah Gerbong Bisnis</label>
                             <div class="control">
-                              <input class="input" type="number" name="seat">
+                              <input class="input" type="number" name="bus_seat">
                             </div>
-                            @if ($errors->has('seat'))
-                              <p class="help is-danger">{{$errors->first('seat')}}</p>
+                            @if ($errors->has('bus_seat'))
+                              <p class="help is-danger">{{$errors->first('bus_seat')}}</p>
                             @endif
                           </div>
                         </div>
 
                         <div class="column">
                           <div class="field">
-                            <label class="label">Class</label>
+                            <label class="label">Jumlah Gerbong Ekonomi</label>
                             <div class="control">
-                              <div class="select">
-                                <select name="class">
-                                  @foreach ($enum as $e)
-                                    <option value="{{ $e }}">{{ $e }}</option>
-                                  @endforeach
-                                </select>
-                              </div>
+                              <input class="input" type="number" name="eco_seat">
                             </div>
-                            @if ($errors->has('class'))
-                              <p class="help is-danger">{{$errors->first('class')}}</p>
+                            @if ($errors->has('eco_seat'))
+                              <p class="help is-danger">{{$errors->first('eco_seat')}}</p>
                             @endif
                           </div>
                         </div>
+
                       </div>
 
                       <div class="field">

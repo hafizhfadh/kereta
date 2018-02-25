@@ -16,6 +16,10 @@ class CreateTrainsTable extends Migration
         Schema::create('trains', function (Blueprint $table) {
             $table->increments('id');
             $table->string('train_name')->unique();
+            $table->integer('exec_seat');
+            $table->integer('bus_seat');
+            $table->integer('eco_seat');
+            $table->integer('price');
             $table->timestamps();
         });
     }

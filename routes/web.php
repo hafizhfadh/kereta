@@ -19,3 +19,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/train', 'TrainController');
+
+Route::resource('/station', 'StasionController');
+
+Route::resource('/train_schedule', 'ScheduleTrainController');
+
+Route::resource('/booking', 'BookingController');
+
+Route::resource('/customer', 'CustomerController');

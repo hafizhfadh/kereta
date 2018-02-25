@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use App\User;
 use App\Models\Train;
-use App\Models\Wagon;
 use App\Libraries\General;
 use Illuminate\Http\Request;
 
@@ -19,12 +19,10 @@ class TrainController extends Controller
     {
       // $this->middleware('auth',['except' => ['index', 'show']]);
     }
+
     public function index()
     {
-      $train = Train::with('wagons')->get();
-      // foreach ($train as $a) {
-      //   return $a->wagons[0]->train_id;
-      // }
+      $train = Train::all();
         return view('train.index', compact('train'));
     }
 
@@ -35,8 +33,7 @@ class TrainController extends Controller
      */
     public function create()
     {
-        $enum = General::getEnumValues('wagons', 'class');
-        return view('train.create', compact('enum', 'train'));
+        return view('train.create', compact('train'));
     }
 
     /**
@@ -49,28 +46,16 @@ class TrainController extends Controller
     {
       $this->validate($request, [
           'train_name' => 'required|unique:trains|max:255',
-          'class' => 'required',
-          'price' => 'required',
-          'seat' => 'required',
-          'wagon' => 'required'
+          'exec_seat' => 'required',
+          'bus_seat' => 'required',
+          'eco_seat' => 'required',
+          'price' => 'required'
       ]);
 
       // Create Train
-        $train = new Train();
-        $train->train_name = $request->input('train_name');
-        $train->save();
+        $train = Train::create($request->all());
 
-      // Create Wagon
-        for ($b=0; $b < $request->input('wagon'); $b++) {
-          $wagon = Wagon::create([
-            'class' => $request->input('class'),
-            'price' => $request->input('price'),
-            'seat' => $request->input('seat'),
-            'train_id' => $train->id,
-          ]);
-        }
-
-        return redirect('/train')->with('success', 'Post Created');
+        return redirect('/train')->with('success', 'Train Created');
     }
 
     /**
@@ -93,9 +78,8 @@ class TrainController extends Controller
      */
     public function edit($id)
     {
-      $enum = General::getEnumValues('wagons', 'class');
         $train = Train::findOrFail($id);
-        return view('train.edit', compact('train', 'enum'));
+        return view('train.edit', compact('train'));
     }
 
     /**
@@ -107,7 +91,19 @@ class TrainController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+      $this->validate($request, [
+          'train_name' => 'required',
+          'exec_seat' => 'required',
+          'bus_seat' => 'required',
+          'eco_seat' => 'required',
+          'price' => 'required'
+      ]);
+
+      // Update Train
+        $train = Train::find($id)->update($request->all());
+
+        return redirect('/train')->with('success', 'Post Created');
     }
 
     /**

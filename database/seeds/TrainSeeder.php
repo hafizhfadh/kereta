@@ -1,7 +1,6 @@
 <?php
 
 use App\Models\Train;
-use App\Models\Wagon;
 use Illuminate\Database\Seeder;
 class TrainSeeder extends Seeder
 {
@@ -15,35 +14,15 @@ class TrainSeeder extends Seeder
 
       $faker = Faker\Factory::create();
 
-      for ($a=0; $a < 1; $a++) {
+      for ($a=0; $a < 10; $a++) {
         // Create Train
         $train = new Train();
         $train->train_name = 'Kereta '.$faker->firstName;
+        $train->exec_seat = rand(1,50);
+        $train->bus_seat = rand(1,50);
+        $train->eco_seat = rand(1,50);
+        $train->price = rand(100000,500000);
         $train->save();
-
-        // Create Wagon
-        $class = ['1' => 'Executive','2' => 'Busines','3' => 'Economy'];
-        $index_class = array_rand($class);
-        for ($b=0; $b < 10; $b++) {
-          $wagon = Wagon::create([
-            'class' => 'Executive',
-            'price' => rand(100000, 500000),
-            'seat' => rand(20, 50),
-            'train_id' => $train->id,
-          ]);
-        }
-
-        // Create Chair
-        // $rand = ['1' => 'A', '2' => 'B', '3' => 'C', '4' => 'D'];
-        // $index = array_rand($rand);
-        // for ($c=1; $c < 50; $c++) {
-        //   $chair = Chair::create([
-        //     'row' => $c,
-        //     'column' => $rand[$index],
-        //     'status' => 'Available',
-        //     'wagon_id' => $b,
-        //   ]);
-        // }
       }
     }
 }

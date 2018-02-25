@@ -23,5 +23,6 @@ const app = new Vue({
 
 
 require('./bulma-extensions');
+require('select2');
 require('datatables-bulma/js/dataTables.bulma');
 require( 'datatables.net' )( window, $ );

@@ -2,15 +2,15 @@
 
 @section('content')
     <div class="column">
+      @if ($errors->has('success'))
+        <article class="message is-success">
+          <div class="message-body">
+            {{$errors->first('success')}}
+          </div>
+        </article>
+      @endif
         <div class="columns is-responsive is-marginless is-centered">
             <div class="column">
-              @if ($errors->has('success'))
-                <article class="message is-success">
-                  <div class="message-body">
-                    {{$errors->first('success')}}
-                  </div>
-                </article>
-              @endif
                 <nav class="card">
                     <header class="card-header">
                         <p class="card-header-title">
@@ -19,15 +19,13 @@
                         <a href="{{ route('train.create') }}" class="button is-default m-t-10 m-r-10"><i class="fa fa-plus"></i></a>
                     </header>
 
-                    <div class="card-content table__wrapper">
-                      <table class="table is-striped is-narrow is-hoverable is-fullwidth pricing__table" id="datatable">
+                    <div class="card-content">
+                      <table class="table is-striped is-narrow is-hoverable is-fullwidth" id="datatable">
                         <thead>
                           <tr>
                             <th>No</th>
                             <th>Nama Kereta</th>
-                            <th>Jumlah Gerbong</th>
                             <th>Jumlah Kursi</th>
-                            <th>Jenis Kelas Tersedia</th>
                             <th>Harga</th>
                             <th>Action</th>
                           </tr>
@@ -40,17 +38,15 @@
                             <tr>
                               <td>{{ $x }}</td>
                               <td>{{ $a->train_name }}</td>
-                              <td>{{ $a->wagons[0]->train_id }}</td>
-                              <td>{{ $a->wagons[0]->train_id }}</td>
-                              <td>{{ $a->wagons[0]->class }}</td>
-                              <td>{{ "Rp. ".number_format($a->wagons[0]->price,2,",",".") }}</td>
+                              <td>{{ $a->exec_seat + $a->bus_seat + $a->eco_seat }}</td>
+                              <td>{{ "Rp. ".number_format($a->price,2,",",".") }}</td>
                               <td>
                                 <div class="columns is-multiline is-gapless">
                                   <div class="column is-12">
                                     <a href="{{ route('train.edit', $a->id) }}" class="button is-warning is-block"><i class="fa fa-edit"></i></a>
                                   </div>
                                   <div class="column is-12 m-t-10">
-                                    <a href="#" class="button is-danger is-block" onclick="event.preventDefault();document.getElementById('delete-form').submit();"><i class="fa fa-trash "></i></a>
+                                    <a class="button is-danger is-block" onclick="event.preventDefault();document.getElementById('delete-form').submit();"><i class="fa fa-trash "></i></a>
 
                                     <form id="delete-form" action="{{ route('train.destroy', $a->id) }}" method="POST"
                                           style="display: none;">

@@ -2,17 +2,11 @@
 
 namespace App\Models;
 
-use App\Models\Wagon;
 use Illuminate\Database\Eloquent\Model;
 
 class Train extends Model
 {
-  protected $fillable = ['train_name',];
+  protected $fillable = ['train_name','exec_seat', 'bus_seat', 'eco_seat', 'price'];
 
   protected $table = 'trains';
-
-  public function wagons()
-  {
-    return $this->hasMany('App\Models\Wagon', 'train_id', 'id');
-  }
 }

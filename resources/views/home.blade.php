@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="container">
-        <div class="columns is- is-marginless is-centered">
-            <div class="column is-7">
+        <div class="columns is-marginless">
+            <div class="column is-4">
                 <nav class="card">
                     <header class="card-header">
                         <p class="card-header-title">
@@ -12,10 +12,15 @@
                     </header>
 
                     <div class="card-content">
-                        You are logged in!
+                        {{-- {!! $chart->html() !!} --}}
                     </div>
                 </nav>
             </div>
         </div>
     </div>
 @endsection
+
+@push('scripts')
+  {!! Charts::scripts() !!}
+  {{-- {!! $chart->script() !!} --}}
+@endpush

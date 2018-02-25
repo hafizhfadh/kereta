@@ -1,0 +1,1254 @@
+-- Logs begin at Thu 2018-02-22 23:08:21 WIB, end at Fri 2018-02-23 09:16:45 WIB. --
+Feb 22 23:12:20 jhondoe-K46CA ntpd[1869]: Soliciting pool server 193.224.163.77
+Feb 22 23:12:21 jhondoe-K46CA ntpd[1869]: Soliciting pool server 202.59.163.30
+Feb 22 23:12:21 jhondoe-K46CA ntpd[1869]: Soliciting pool server 2001:67c:1560:8003::c8
+Feb 22 23:12:21 jhondoe-K46CA ntpd[1869]: Soliciting pool server 203.114.224.31
+Feb 22 23:12:21 jhondoe-K46CA ntpd[1869]: Soliciting pool server 193.224.45.106
+Feb 22 23:12:21 jhondoe-K46CA ntpd[1869]: Soliciting pool server 144.217.65.182
+Feb 22 23:12:22 jhondoe-K46CA ntpd[1869]: Soliciting pool server 178.62.16.103
+Feb 22 23:12:22 jhondoe-K46CA ntpd[1869]: Soliciting pool server 78.46.93.106
+Feb 22 23:12:23 jhondoe-K46CA ntpd[1869]: Soliciting pool server 91.236.251.5
+Feb 22 23:12:24 jhondoe-K46CA ntpd[1869]: Soliciting pool server 103.76.40.155
+Feb 23 07:39:06 jhondoe-K46CA systemd[1895]: Time has been changed
+-- Subject: Time change
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- The system clock has been changed to REALTIME microseconds after January 1st, 1970.
+Feb 23 07:39:06 jhondoe-K46CA ntpd[1869]: receive: Unexpected origin timestamp from 203.114.224.31
+Feb 23 07:39:06 jhondoe-K46CA systemd[1]: Time has been changed
+-- Subject: Time change
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- The system clock has been changed to REALTIME microseconds after January 1st, 1970.
+Feb 23 07:39:06 jhondoe-K46CA ntpd[1869]: receive: Unexpected origin timestamp from 178.62.16.103
+Feb 23 07:39:06 jhondoe-K46CA ntpd[1869]: receive: Unexpected origin timestamp from 74.82.59.150
+Feb 23 07:39:06 jhondoe-K46CA ntpd[1869]: receive: Unexpected origin timestamp from 78.36.11.161
+Feb 23 07:39:06 jhondoe-K46CA ntpd[1869]: receive: Unexpected origin timestamp from 91.236.251.5
+Feb 23 07:39:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:39:40 jhondoe-K46CA CRON[3902]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 23 07:39:40 jhondoe-K46CA CRON[3903]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Feb 23 07:39:40 jhondoe-K46CA CRON[3902]: pam_unix(cron:session): session closed for user root
+Feb 23 07:39:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346386.9085] dhcp4 (wlp2s0): state changed bound -> expire
+Feb 23 07:39:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346386.9415] dhcp4 (wlp2s0): canceled DHCP transaction, DHCP client pid 2702
+Feb 23 07:39:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346386.9416] dhcp4 (wlp2s0): state changed expire -> done
+Feb 23 07:39:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346386.9427] device (wlp2s0): state change: activated -> failed (reason 'ip-config-expired') [100 120 6]
+Feb 23 07:39:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346386.9435] manager: NetworkManager state is now CONNECTED_LOCAL
+Feb 23 07:39:46 jhondoe-K46CA NetworkManager[1017]: [0;1;39m<warn>  [1519346386.9960] device (wlp2s0): Activation: failed for connection 'Auto RPL ADV'[0m
+Feb 23 07:39:46 jhondoe-K46CA dbus[969]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'[0m
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0001] device (wlp2s0): state change: failed -> disconnected (reason 'none') [120 30 0]
+Feb 23 07:39:47 jhondoe-K46CA systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Unit NetworkManager-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has begun starting up.
+Feb 23 07:39:47 jhondoe-K46CA avahi-daemon[1019]: Withdrawing address record for fe80::68ac:a785:21ca:5e1 on wlp2s0.
+Feb 23 07:39:47 jhondoe-K46CA avahi-daemon[1019]: Leaving mDNS multicast group on interface wlp2s0.IPv6 with address fe80::68ac:a785:21ca:5e1.
+Feb 23 07:39:47 jhondoe-K46CA avahi-daemon[1019]: Interface wlp2s0.IPv6 no longer relevant for mDNS.
+Feb 23 07:39:47 jhondoe-K46CA kernel: wlp2s0: deauthenticating from 4c:5e:0c:34:86:19 by local choice (Reason: 3=DEAUTH_LEAVING)
+Feb 23 07:39:47 jhondoe-K46CA avahi-daemon[1019]: Withdrawing address record for 10.10.220.43 on wlp2s0.
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0148] dns-mgr: Writing DNS information to /sbin/resolvconf
+Feb 23 07:39:47 jhondoe-K46CA avahi-daemon[1019]: Leaving mDNS multicast group on interface wlp2s0.IPv4 with address 10.10.220.43.
+Feb 23 07:39:47 jhondoe-K46CA systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Unit NetworkManager-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 07:39:47 jhondoe-K46CA avahi-daemon[1019]: Interface wlp2s0.IPv4 no longer relevant for mDNS.
+Feb 23 07:39:47 jhondoe-K46CA dbus[969]: [0;1;39m[system] Successfully activated service 'org.freedesktop.nm_dispatcher'[0m
+Feb 23 07:39:47 jhondoe-K46CA nm-dispatcher[3910]: req:1 'down' [wlp2s0]: new request (1 scripts)
+Feb 23 07:39:47 jhondoe-K46CA nm-dispatcher[3910]: req:1 'down' [wlp2s0]: start running ordered scripts...
+Feb 23 07:39:47 jhondoe-K46CA dnsmasq[1500]: setting upstream servers from DBus
+Feb 23 07:39:47 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: CTRL-EVENT-DISCONNECTED bssid=4c:5e:0c:34:86:19 reason=3 locally_generated=1[0m
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: [0;1;39m<warn>  [1519346387.0576] sup-iface[0x18d3ed0,wlp2s0]: connection disconnected (reason -3)[0m
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0577] device (wlp2s0): supplicant interface state: completed -> disconnected
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0610] policy: auto-activating connection 'Auto RPL ADV'
+Feb 23 07:39:47 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: CTRL-EVENT-REGDOM-CHANGE init=CORE type=WORLD[0m
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0631] device (wlp2s0): Activation: starting connection 'Auto RPL ADV' (98a34ce3-08f9-49d6-a241-dc585e7ef420)
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0634] device (wlp2s0): state change: disconnected -> prepare (reason 'none') [30 40 0]
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0637] manager: NetworkManager state is now CONNECTING
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0648] device (wlp2s0): state change: prepare -> config (reason 'none') [40 50 0]
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0653] device (wlp2s0): Activation: (wifi) connection 'Auto RPL ADV' requires no security.  No secrets needed.
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0654] Config: added 'ssid' value 'RPL ADV'
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0654] Config: added 'scan_ssid' value '1'
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0654] Config: added 'key_mgmt' value 'NONE'
+Feb 23 07:39:47 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346387.0753] sup-iface[0x18d3ed0,wlp2s0]: config: set interface ap_scan to 1
+Feb 23 07:39:48 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: SME: Trying to authenticate with 4c:5e:0c:34:86:19 (SSID='RPL ADV' freq=2452 MHz)[0m
+Feb 23 07:39:48 jhondoe-K46CA kernel: wlp2s0: authenticate with 4c:5e:0c:34:86:19
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.1242] device (wlp2s0): supplicant interface state: disconnected -> authenticating
+Feb 23 07:39:48 jhondoe-K46CA kernel: wlp2s0: send auth to 4c:5e:0c:34:86:19 (try 1/3)
+Feb 23 07:39:48 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: Trying to associate with 4c:5e:0c:34:86:19 (SSID='RPL ADV' freq=2452 MHz)[0m
+Feb 23 07:39:48 jhondoe-K46CA kernel: wlp2s0: authenticated
+Feb 23 07:39:48 jhondoe-K46CA kernel: wlp2s0: associate with 4c:5e:0c:34:86:19 (try 1/3)
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.1438] device (wlp2s0): supplicant interface state: authenticating -> associating
+Feb 23 07:39:48 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: Associated with 4c:5e:0c:34:86:19[0m
+Feb 23 07:39:48 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: CTRL-EVENT-CONNECTED - Connection to 4c:5e:0c:34:86:19 completed [id=0 id_str=][0m
+Feb 23 07:39:48 jhondoe-K46CA kernel: wlp2s0: RX AssocResp from 4c:5e:0c:34:86:19 (capab=0x401 status=0 aid=13)
+Feb 23 07:39:48 jhondoe-K46CA kernel: wlp2s0: associated
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.1611] device (wlp2s0): supplicant interface state: associating -> completed
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.1612] device (wlp2s0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful.  Connected to wireless network 'RPL ADV'.
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.1615] device (wlp2s0): state change: config -> ip-config (reason 'none') [50 70 0]
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.1624] dhcp4 (wlp2s0): activation: beginning transaction (timeout in 45 seconds)
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.1658] dhcp4 (wlp2s0): dhclient started with pid 3937
+Feb 23 07:39:48 jhondoe-K46CA dhclient[3937]: DHCPDISCOVER on wlp2s0 to 255.255.255.255 port 67 interval 3 (xid=0xee10359)
+Feb 23 07:39:48 jhondoe-K46CA dhclient[3937]: DHCPREQUEST of 10.10.220.43 on wlp2s0 to 255.255.255.255 port 67 (xid=0x5903e10e)
+Feb 23 07:39:48 jhondoe-K46CA dhclient[3937]: DHCPOFFER of 10.10.220.43 from 10.10.220.1
+Feb 23 07:39:48 jhondoe-K46CA dhclient[3937]: DHCPACK of 10.10.220.43 from 10.10.220.1
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3233]   address 10.10.220.43
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3234]   plen 26 (255.255.255.192)
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3235]   gateway 10.10.220.1
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3235]   server identifier 10.10.220.1
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3236]   lease time 7200
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3237]   nameserver '10.10.220.1'
+Feb 23 07:39:48 jhondoe-K46CA avahi-daemon[1019]: Joining mDNS multicast group on interface wlp2s0.IPv4 with address 10.10.220.43.
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3237]   nameserver '203.142.82.222'
+Feb 23 07:39:48 jhondoe-K46CA avahi-daemon[1019]: New relevant interface wlp2s0.IPv4 for mDNS.
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3238]   nameserver '203.142.84.222'
+Feb 23 07:39:48 jhondoe-K46CA avahi-daemon[1019]: Registering new address record for 10.10.220.43 on wlp2s0.IPv4.
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3238]   nameserver '10.10.220.1'
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3239] dhcp4 (wlp2s0): state changed unknown -> bound
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3327] device (wlp2s0): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3340] device (wlp2s0): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3346] device (wlp2s0): state change: secondaries -> activated (reason 'none') [90 100 0]
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.3349] manager: NetworkManager state is now CONNECTED_LOCAL
+Feb 23 07:39:48 jhondoe-K46CA dhclient[3937]: bound to 10.10.220.43 -- renewal in 2715 seconds.
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.4116] manager: NetworkManager state is now CONNECTED_GLOBAL
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.4119] policy: set 'Auto RPL ADV' (wlp2s0) as default for IPv4 routing and DNS
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.4121] dns-mgr: Writing DNS information to /sbin/resolvconf
+Feb 23 07:39:48 jhondoe-K46CA dnsmasq[1500]: setting upstream servers from DBus
+Feb 23 07:39:48 jhondoe-K46CA dnsmasq[1500]: using nameserver 10.10.220.1#53(via wlp2s0)
+Feb 23 07:39:48 jhondoe-K46CA dnsmasq[1500]: using nameserver 203.142.82.222#53(via wlp2s0)
+Feb 23 07:39:48 jhondoe-K46CA dnsmasq[1500]: using nameserver 203.142.84.222#53(via wlp2s0)
+Feb 23 07:39:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519346388.4237] device (wlp2s0): Activation: successful, device activated.
+Feb 23 07:39:48 jhondoe-K46CA nm-dispatcher[3910]: req:2 'up' [wlp2s0]: new request (1 scripts)
+Feb 23 07:39:48 jhondoe-K46CA nm-dispatcher[3910]: req:2 'up' [wlp2s0]: start running ordered scripts...
+Feb 23 07:39:49 jhondoe-K46CA avahi-daemon[1019]: Joining mDNS multicast group on interface wlp2s0.IPv6 with address fe80::68ac:a785:21ca:5e1.
+Feb 23 07:39:49 jhondoe-K46CA avahi-daemon[1019]: New relevant interface wlp2s0.IPv6 for mDNS.
+Feb 23 07:39:49 jhondoe-K46CA avahi-daemon[1019]: Registering new address record for fe80::68ac:a785:21ca:5e1 on wlp2s0.*.
+Feb 23 07:40:02 jhondoe-K46CA ntpdate[4039]: [0;1;31mthe NTP socket is in use, exiting[0m
+Feb 23 07:40:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:41:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:42:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:43:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:44:29 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:45:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:46:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:46:31 jhondoe-K46CA sudo[4571]: [0;1;39m jhondoe : TTY=unknown ; PWD=/home/jhondoe ; USER=root ; COMMAND=/usr/lib/linuxmint/mintUpdate/checkAPT.py[0m
+Feb 23 07:46:31 jhondoe-K46CA sudo[4571]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 23 07:47:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:48:09 jhondoe-K46CA sudo[4571]: pam_unix(sudo:session): session closed for user root
+Feb 23 07:48:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:49:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:49:48 jhondoe-K46CA systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+Feb 23 07:49:48 jhondoe-K46CA systemd-tmpfiles[5968]: [0;1;39m[/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.[0m
+Feb 23 07:49:48 jhondoe-K46CA systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 07:50:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:50:58 jhondoe-K46CA polkitd(authority=local)[1087]: [0;1;39mOperator of unix-session:c2 successfully authenticated as unix-user:jhondoe to gain ONE-SHOT authorization for action com.ubuntu.pkexec.synaptic for unix-process:6047:96612 [/bin/sh -c pkexec /usr/sbin/synaptic --hide-main-window --non-interactive --parent-window-id 90177561 -o Synaptic::closeZvt=true --progress-str "Please wait, this can take some time" --finish-str "Update is complete" --set-selections-file /tmp/tmpsuksw7sy] (owned by unix-user:jhondoe)[0m
+Feb 23 07:50:58 jhondoe-K46CA pkexec[6048]: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 23 07:50:58 jhondoe-K46CA pkexec[6048]: pam_systemd(polkit-1:session): Cannot create session: Already running in a session
+Feb 23 07:50:58 jhondoe-K46CA pkexec[6048]: [0;1;31mpam_ck_connector(polkit-1:session): cannot determine display-device[0m
+Feb 23 07:50:58 jhondoe-K46CA pkexec[6048]: [0;1;39mjhondoe: Executing command [USER=root] [TTY=unknown] [CWD=/home/jhondoe] [COMMAND=/usr/sbin/synaptic --hide-main-window --non-interactive --parent-window-id 90177561 -o Synaptic::closeZvt=true --progress-str Please wait, this can take some time --finish-str Update is complete --set-selections-file /tmp/tmpsuksw7sy][0m
+Feb 23 07:51:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:52:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:52:38 jhondoe-K46CA ntpd[1869]: 103.76.40.155 local addr 10.10.220.43 -> <null>
+Feb 23 07:53:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:54:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:55:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:56:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:57:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:58:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 07:59:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:00:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:01:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:02:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:03:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:05:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:06:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:07:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:08:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:09:01 jhondoe-K46CA CRON[6959]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 23 08:09:01 jhondoe-K46CA CRON[6960]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Feb 23 08:09:01 jhondoe-K46CA CRON[6959]: pam_unix(cron:session): session closed for user root
+Feb 23 08:09:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:10:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:11:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:12:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:13:25 jhondoe-K46CA kernel: [0;1;39m[UFW BLOCK] IN=wlp2s0 OUT= MAC=33:33:00:00:00:01:4c:5e:0c:34:86:19:86:dd SRC=fe80:0000:0000:0000:4e5e:0cff:fe34:8619 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=181 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=UDP SPT=5678 DPT=5678 LEN=141 [0m
+Feb 23 08:13:46 jhondoe-K46CA kernel: wlp2s0: deauthenticating from 4c:5e:0c:34:86:19 by local choice (Reason: 3=DEAUTH_LEAVING)
+Feb 23 08:13:46 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: CTRL-EVENT-DISCONNECTED bssid=4c:5e:0c:34:86:19 reason=3 locally_generated=1[0m
+Feb 23 08:13:46 jhondoe-K46CA avahi-daemon[1019]: Interface wlp2s0.IPv6 no longer relevant for mDNS.
+Feb 23 08:13:46 jhondoe-K46CA avahi-daemon[1019]: Leaving mDNS multicast group on interface wlp2s0.IPv6 with address fe80::68ac:a785:21ca:5e1.
+Feb 23 08:13:46 jhondoe-K46CA dhclient[3937]: [0;1;31mreceive_packet failed on wlp2s0: Network is down[0m
+Feb 23 08:13:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348426.6094] manager: WiFi hardware radio set disabled
+Feb 23 08:13:46 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mrfkill: WLAN soft blocked[0m
+Feb 23 08:13:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348426.6095] device (wlp2s0): state change: activated -> unavailable (reason 'none') [100 20 0]
+Feb 23 08:13:46 jhondoe-K46CA avahi-daemon[1019]: Interface wlp2s0.IPv4 no longer relevant for mDNS.
+Feb 23 08:13:46 jhondoe-K46CA systemd[1]: Starting Load/Save RF Kill Switch Status...
+-- Subject: Unit systemd-rfkill.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-rfkill.service has begun starting up.
+Feb 23 08:13:46 jhondoe-K46CA avahi-daemon[1019]: Leaving mDNS multicast group on interface wlp2s0.IPv4 with address 10.10.220.43.
+Feb 23 08:13:46 jhondoe-K46CA avahi-daemon[1019]: Withdrawing address record for fe80::68ac:a785:21ca:5e1 on wlp2s0.
+Feb 23 08:13:46 jhondoe-K46CA avahi-daemon[1019]: Withdrawing address record for 10.10.220.43 on wlp2s0.
+Feb 23 08:13:46 jhondoe-K46CA systemd[1]: Started Load/Save RF Kill Switch Status.
+-- Subject: Unit systemd-rfkill.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-rfkill.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:13:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348426.6476] dhcp4 (wlp2s0): canceled DHCP transaction, DHCP client pid 3937
+Feb 23 08:13:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348426.6476] dhcp4 (wlp2s0): state changed bound -> done
+Feb 23 08:13:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348426.6496] dns-mgr: Writing DNS information to /sbin/resolvconf
+Feb 23 08:13:46 jhondoe-K46CA dnsmasq[1500]: setting upstream servers from DBus
+Feb 23 08:13:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348426.8042] manager: NetworkManager state is now CONNECTED_LOCAL
+Feb 23 08:13:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348426.8773] audit: op="radio-control" arg="wireless-enabled:0" pid=2171 uid=1000 result="success"
+Feb 23 08:13:46 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348426.8777] manager: WiFi now disabled by radio killswitch
+Feb 23 08:13:46 jhondoe-K46CA dbus[969]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'[0m
+Feb 23 08:13:46 jhondoe-K46CA systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Unit NetworkManager-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has begun starting up.
+Feb 23 08:13:46 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mnl80211: deinit ifname=wlp2s0 disabled_11b_rates=0[0m
+Feb 23 08:13:47 jhondoe-K46CA dbus[969]: [0;1;39m[system] Successfully activated service 'org.freedesktop.nm_dispatcher'[0m
+Feb 23 08:13:47 jhondoe-K46CA systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Unit NetworkManager-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:13:47 jhondoe-K46CA nm-dispatcher[7069]: req:1 'down' [wlp2s0]: new request (1 scripts)
+Feb 23 08:13:47 jhondoe-K46CA nm-dispatcher[7069]: req:1 'down' [wlp2s0]: start running ordered scripts...
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: Deleting interface #8 wlp2s0, 10.10.220.43#123, interface stats: received=335, sent=410, dropped=1, active_time=2182 secs
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 91.236.251.5 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 78.46.93.106 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 178.62.16.103 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 144.217.65.182 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 193.224.45.106 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 203.114.224.31 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 202.59.163.30 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 91.189.89.198 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 193.224.163.77 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 78.36.11.161 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: 74.82.59.150 local addr 10.10.220.43 -> <null>
+Feb 23 08:13:47 jhondoe-K46CA ntpd[1869]: Deleting interface #9 wlp2s0, fe80::68ac:a785:21ca:5e1%3#123, interface stats: received=0, sent=0, dropped=0, active_time=2182 secs
+Feb 23 08:13:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348428.6211] manager: WiFi hardware radio set enabled
+Feb 23 08:13:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348428.6404] audit: op="radio-control" arg="wireless-enabled:1" pid=2171 uid=1000 result="success"
+Feb 23 08:13:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348428.6408] manager: WiFi now enabled by radio killswitch
+Feb 23 08:13:48 jhondoe-K46CA kernel: IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+Feb 23 08:13:48 jhondoe-K46CA wpa_supplicant[1328]: [0;1;31mdbus: wpa_dbus_get_object_properties: failed to get object properties: (none) none[0m
+Feb 23 08:13:48 jhondoe-K46CA wpa_supplicant[1328]: [0;1;31mdbus: Failed to construct signal[0m
+Feb 23 08:13:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348428.6925] device (wlp2s0): supplicant interface state: starting -> ready
+Feb 23 08:13:48 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348428.6927] device (wlp2s0): state change: unavailable -> disconnected (reason 'supplicant-available') [20 30 42]
+Feb 23 08:13:48 jhondoe-K46CA kernel: IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7541] device (wlp2s0): supplicant interface state: ready -> inactive
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7809] policy: auto-activating connection 'Auto RPL ADV'
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7834] device (wlp2s0): Activation: starting connection 'Auto RPL ADV' (98a34ce3-08f9-49d6-a241-dc585e7ef420)
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7836] device (wlp2s0): state change: disconnected -> prepare (reason 'none') [30 40 0]
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7839] manager: NetworkManager state is now CONNECTING
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7851] device (wlp2s0): state change: prepare -> config (reason 'none') [40 50 0]
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7858] device (wlp2s0): Activation: (wifi) connection 'Auto RPL ADV' requires no security.  No secrets needed.
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7859] Config: added 'ssid' value 'RPL ADV'
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7859] Config: added 'scan_ssid' value '1'
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7860] Config: added 'key_mgmt' value 'NONE'
+Feb 23 08:13:49 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348429.7958] sup-iface[0x1996ac0,wlp2s0]: config: set interface ap_scan to 1
+Feb 23 08:13:50 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: SME: Trying to authenticate with 4c:5e:0c:34:86:19 (SSID='RPL ADV' freq=2452 MHz)[0m
+Feb 23 08:13:50 jhondoe-K46CA kernel: wlp2s0: authenticate with 4c:5e:0c:34:86:19
+Feb 23 08:13:50 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348430.8403] device (wlp2s0): supplicant interface state: inactive -> authenticating
+Feb 23 08:13:50 jhondoe-K46CA kernel: wlp2s0: send auth to 4c:5e:0c:34:86:19 (try 1/3)
+Feb 23 08:13:50 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: Trying to associate with 4c:5e:0c:34:86:19 (SSID='RPL ADV' freq=2452 MHz)[0m
+Feb 23 08:13:50 jhondoe-K46CA kernel: wlp2s0: authenticated
+Feb 23 08:13:50 jhondoe-K46CA kernel: wlp2s0: associate with 4c:5e:0c:34:86:19 (try 1/3)
+Feb 23 08:13:50 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348430.8546] device (wlp2s0): supplicant interface state: authenticating -> associating
+Feb 23 08:13:50 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: Associated with 4c:5e:0c:34:86:19[0m
+Feb 23 08:13:50 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: CTRL-EVENT-CONNECTED - Connection to 4c:5e:0c:34:86:19 completed [id=0 id_str=][0m
+Feb 23 08:13:50 jhondoe-K46CA kernel: wlp2s0: RX AssocResp from 4c:5e:0c:34:86:19 (capab=0x401 status=0 aid=13)
+Feb 23 08:13:50 jhondoe-K46CA kernel: wlp2s0: associated
+Feb 23 08:13:50 jhondoe-K46CA kernel: IPv6: ADDRCONF(NETDEV_CHANGE): wlp2s0: link becomes ready
+Feb 23 08:13:50 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348430.8620] device (wlp2s0): supplicant interface state: associating -> completed
+Feb 23 08:13:50 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348430.8621] device (wlp2s0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful.  Connected to wireless network 'RPL ADV'.
+Feb 23 08:13:50 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348430.8623] device (wlp2s0): state change: config -> ip-config (reason 'none') [50 70 0]
+Feb 23 08:13:50 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348430.8630] dhcp4 (wlp2s0): activation: beginning transaction (timeout in 45 seconds)
+Feb 23 08:13:50 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348430.8832] dhcp4 (wlp2s0): dhclient started with pid 7107
+Feb 23 08:13:50 jhondoe-K46CA dhclient[7107]: DHCPREQUEST of 10.10.220.43 on wlp2s0 to 255.255.255.255 port 67 (xid=0x9a70820)
+Feb 23 08:13:51 jhondoe-K46CA dhclient[7107]: DHCPACK of 10.10.220.43 from 10.10.220.1
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0090]   address 10.10.220.43
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0090]   plen 26 (255.255.255.192)
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0090]   gateway 10.10.220.1
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0090]   server identifier 10.10.220.1
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0091]   lease time 7200
+Feb 23 08:13:51 jhondoe-K46CA avahi-daemon[1019]: Joining mDNS multicast group on interface wlp2s0.IPv4 with address 10.10.220.43.
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0091]   nameserver '10.10.220.1'
+Feb 23 08:13:51 jhondoe-K46CA avahi-daemon[1019]: New relevant interface wlp2s0.IPv4 for mDNS.
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0091]   nameserver '203.142.82.222'
+Feb 23 08:13:51 jhondoe-K46CA avahi-daemon[1019]: Registering new address record for 10.10.220.43 on wlp2s0.IPv4.
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0091]   nameserver '203.142.84.222'
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0091]   nameserver '10.10.220.1'
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0092] dhcp4 (wlp2s0): state changed unknown -> bound
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0112] device (wlp2s0): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0124] device (wlp2s0): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0130] device (wlp2s0): state change: secondaries -> activated (reason 'none') [90 100 0]
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0133] manager: NetworkManager state is now CONNECTED_LOCAL
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0718] manager: NetworkManager state is now CONNECTED_GLOBAL
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0722] policy: set 'Auto RPL ADV' (wlp2s0) as default for IPv4 routing and DNS
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0727] dns-mgr: Writing DNS information to /sbin/resolvconf
+Feb 23 08:13:51 jhondoe-K46CA dnsmasq[1500]: setting upstream servers from DBus
+Feb 23 08:13:51 jhondoe-K46CA dnsmasq[1500]: using nameserver 10.10.220.1#53(via wlp2s0)
+Feb 23 08:13:51 jhondoe-K46CA dnsmasq[1500]: using nameserver 203.142.82.222#53(via wlp2s0)
+Feb 23 08:13:51 jhondoe-K46CA dnsmasq[1500]: using nameserver 203.142.84.222#53(via wlp2s0)
+Feb 23 08:13:51 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348431.0827] device (wlp2s0): Activation: successful, device activated.
+Feb 23 08:13:51 jhondoe-K46CA nm-dispatcher[7069]: req:2 'up' [wlp2s0]: new request (1 scripts)
+Feb 23 08:13:51 jhondoe-K46CA nm-dispatcher[7069]: req:2 'up' [wlp2s0]: start running ordered scripts...
+Feb 23 08:13:51 jhondoe-K46CA dhclient[7107]: bound to 10.10.220.43 -- renewal in 3052 seconds.
+Feb 23 08:13:52 jhondoe-K46CA avahi-daemon[1019]: Joining mDNS multicast group on interface wlp2s0.IPv6 with address fe80::68ac:a785:21ca:5e1.
+Feb 23 08:13:52 jhondoe-K46CA avahi-daemon[1019]: New relevant interface wlp2s0.IPv6 for mDNS.
+Feb 23 08:13:52 jhondoe-K46CA avahi-daemon[1019]: Registering new address record for fe80::68ac:a785:21ca:5e1 on wlp2s0.*.
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.7769] device (wlp2s0): disconnecting for new activation request.
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.7775] device (wlp2s0): state change: activated -> deactivating (reason 'new-activation') [100 110 60]
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.7779] manager: NetworkManager state is now CONNECTED_LOCAL
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8125] audit: op="connection-activate" uuid="cb474048-03d5-4b79-94d0-0efa4b49c09b" name="Auto b" pid=2171 uid=1000 result="success"
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8150] device (wlp2s0): state change: deactivating -> disconnected (reason 'new-activation') [110 30 60]
+Feb 23 08:13:52 jhondoe-K46CA avahi-daemon[1019]: Withdrawing address record for fe80::68ac:a785:21ca:5e1 on wlp2s0.
+Feb 23 08:13:52 jhondoe-K46CA avahi-daemon[1019]: Leaving mDNS multicast group on interface wlp2s0.IPv6 with address fe80::68ac:a785:21ca:5e1.
+Feb 23 08:13:52 jhondoe-K46CA avahi-daemon[1019]: Interface wlp2s0.IPv6 no longer relevant for mDNS.
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8345] dhcp4 (wlp2s0): canceled DHCP transaction, DHCP client pid 7107
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8346] dhcp4 (wlp2s0): state changed bound -> done
+Feb 23 08:13:52 jhondoe-K46CA avahi-daemon[1019]: Withdrawing address record for 10.10.220.43 on wlp2s0.
+Feb 23 08:13:52 jhondoe-K46CA avahi-daemon[1019]: Leaving mDNS multicast group on interface wlp2s0.IPv4 with address 10.10.220.43.
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8378] dns-mgr: Writing DNS information to /sbin/resolvconf
+Feb 23 08:13:52 jhondoe-K46CA dnsmasq[1500]: setting upstream servers from DBus
+Feb 23 08:13:52 jhondoe-K46CA kernel: wlp2s0: deauthenticating from 4c:5e:0c:34:86:19 by local choice (Reason: 3=DEAUTH_LEAVING)
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8550] device (wlp2s0): Activation: starting connection 'Auto b' (cb474048-03d5-4b79-94d0-0efa4b49c09b)
+Feb 23 08:13:52 jhondoe-K46CA nm-dispatcher[7069]: req:3 'down' [wlp2s0]: new request (1 scripts)
+Feb 23 08:13:52 jhondoe-K46CA nm-dispatcher[7069]: req:3 'down' [wlp2s0]: start running ordered scripts...
+Feb 23 08:13:52 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: CTRL-EVENT-DISCONNECTED bssid=4c:5e:0c:34:86:19 reason=3 locally_generated=1[0m
+Feb 23 08:13:52 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: CTRL-EVENT-REGDOM-CHANGE init=CORE type=WORLD[0m
+Feb 23 08:13:52 jhondoe-K46CA avahi-daemon[1019]: Interface wlp2s0.IPv4 no longer relevant for mDNS.
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: [0;1;39m<warn>  [1519348432.8888] sup-iface[0x1996ac0,wlp2s0]: connection disconnected (reason -3)[0m
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8889] device (wlp2s0): supplicant interface state: completed -> disconnected
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8937] device (wlp2s0): state change: disconnected -> prepare (reason 'none') [30 40 0]
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8950] manager: NetworkManager state is now CONNECTING
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8983] device (wlp2s0): state change: prepare -> config (reason 'none') [40 50 0]
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.8995] device (wlp2s0): Activation: (wifi) access point 'Auto b' has security, but secrets are required.
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.9000] device (wlp2s0): state change: config -> need-auth (reason 'none') [50 60 0]
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.9143] device (wlp2s0): state change: need-auth -> prepare (reason 'none') [60 40 0]
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.9169] device (wlp2s0): state change: prepare -> config (reason 'none') [40 50 0]
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.9182] device (wlp2s0): Activation: (wifi) connection 'Auto b' has security, and secrets exist.  No new secrets needed.
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.9189] Config: added 'ssid' value 'b'
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.9194] Config: added 'scan_ssid' value '1'
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.9199] Config: added 'key_mgmt' value 'WPA-PSK'
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.9203] Config: added 'auth_alg' value 'OPEN'
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.9207] Config: added 'psk' value '<omitted>'
+Feb 23 08:13:52 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348432.9235] sup-iface[0x1996ac0,wlp2s0]: config: set interface ap_scan to 1
+Feb 23 08:13:53 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: SME: Trying to authenticate with 02:ec:0a:48:16:98 (SSID='b' freq=2442 MHz)[0m
+Feb 23 08:13:53 jhondoe-K46CA kernel: wlp2s0: authenticate with 02:ec:0a:48:16:98
+Feb 23 08:13:53 jhondoe-K46CA kernel: wlp2s0: send auth to 02:ec:0a:48:16:98 (try 1/3)
+Feb 23 08:13:53 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348433.9376] device (wlp2s0): supplicant interface state: disconnected -> authenticating
+Feb 23 08:13:53 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: Trying to associate with 02:ec:0a:48:16:98 (SSID='b' freq=2442 MHz)[0m
+Feb 23 08:13:53 jhondoe-K46CA kernel: wlp2s0: authenticated
+Feb 23 08:13:53 jhondoe-K46CA kernel: wlp2s0: associate with 02:ec:0a:48:16:98 (try 1/3)
+Feb 23 08:13:53 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348433.9456] device (wlp2s0): supplicant interface state: authenticating -> associating
+Feb 23 08:13:53 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: Associated with 02:ec:0a:48:16:98[0m
+Feb 23 08:13:53 jhondoe-K46CA kernel: wlp2s0: RX AssocResp from 02:ec:0a:48:16:98 (capab=0x431 status=0 aid=1)
+Feb 23 08:13:53 jhondoe-K46CA kernel: wlp2s0: associated
+Feb 23 08:13:53 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348433.9621] device (wlp2s0): supplicant interface state: associating -> associated
+Feb 23 08:13:53 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348433.9712] device (wlp2s0): supplicant interface state: associated -> 4-way handshake
+Feb 23 08:13:53 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: WPA: Key negotiation completed with 02:ec:0a:48:16:98 [PTK=CCMP GTK=CCMP][0m
+Feb 23 08:13:53 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: CTRL-EVENT-CONNECTED - Connection to 02:ec:0a:48:16:98 completed [id=0 id_str=][0m
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0054] device (wlp2s0): supplicant interface state: 4-way handshake -> completed
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0056] device (wlp2s0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful.  Connected to wireless network 'b'.
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0057] device (wlp2s0): state change: config -> ip-config (reason 'none') [50 70 0]
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0065] dhcp4 (wlp2s0): activation: beginning transaction (timeout in 45 seconds)
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0086] dhcp4 (wlp2s0): dhclient started with pid 7284
+Feb 23 08:13:54 jhondoe-K46CA dhclient[7284]: DHCPDISCOVER on wlp2s0 to 255.255.255.255 port 67 interval 3 (xid=0xfe8a6f78)
+Feb 23 08:13:54 jhondoe-K46CA dhclient[7284]: DHCPREQUEST of 192.168.43.155 on wlp2s0 to 255.255.255.255 port 67 (xid=0x786f8afe)
+Feb 23 08:13:54 jhondoe-K46CA dhclient[7284]: DHCPOFFER of 192.168.43.155 from 192.168.43.1
+Feb 23 08:13:54 jhondoe-K46CA dhclient[7284]: DHCPACK of 192.168.43.155 from 192.168.43.1
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0893]   address 192.168.43.155
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0894]   plen 24 (255.255.255.0)
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0894]   gateway 192.168.43.1
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0894]   server identifier 192.168.43.1
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0895]   lease time 3600
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0895]   hostname 'jhondoe-K46CA'
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0895]   nameserver '192.168.43.1'
+Feb 23 08:13:54 jhondoe-K46CA avahi-daemon[1019]: Joining mDNS multicast group on interface wlp2s0.IPv4 with address 192.168.43.155.
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0896] dhcp4 (wlp2s0): state changed unknown -> bound
+Feb 23 08:13:54 jhondoe-K46CA avahi-daemon[1019]: New relevant interface wlp2s0.IPv4 for mDNS.
+Feb 23 08:13:54 jhondoe-K46CA avahi-daemon[1019]: Registering new address record for 192.168.43.155 on wlp2s0.IPv4.
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0952] device (wlp2s0): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.0996] device (wlp2s0): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.1002] device (wlp2s0): state change: secondaries -> activated (reason 'none') [90 100 0]
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.1005] manager: NetworkManager state is now CONNECTED_LOCAL
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.1493] manager: NetworkManager state is now CONNECTED_GLOBAL
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.1495] policy: set 'Auto b' (wlp2s0) as default for IPv4 routing and DNS
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.1499] dns-mgr: Writing DNS information to /sbin/resolvconf
+Feb 23 08:13:54 jhondoe-K46CA dnsmasq[1500]: setting upstream servers from DBus
+Feb 23 08:13:54 jhondoe-K46CA dnsmasq[1500]: using nameserver 192.168.43.1#53(via wlp2s0)
+Feb 23 08:13:54 jhondoe-K46CA NetworkManager[1017]: <info>  [1519348434.1619] device (wlp2s0): Activation: successful, device activated.
+Feb 23 08:13:54 jhondoe-K46CA nm-dispatcher[7069]: req:4 'up' [wlp2s0]: new request (1 scripts)
+Feb 23 08:13:54 jhondoe-K46CA nm-dispatcher[7069]: req:4 'up' [wlp2s0]: start running ordered scripts...
+Feb 23 08:13:54 jhondoe-K46CA dhclient[7284]: bound to 192.168.43.155 -- renewal in 1462 seconds.
+Feb 23 08:13:55 jhondoe-K46CA avahi-daemon[1019]: Joining mDNS multicast group on interface wlp2s0.IPv6 with address fe80::2e0f:9c27:9167:97ac.
+Feb 23 08:13:55 jhondoe-K46CA avahi-daemon[1019]: New relevant interface wlp2s0.IPv6 for mDNS.
+Feb 23 08:13:55 jhondoe-K46CA avahi-daemon[1019]: Registering new address record for fe80::2e0f:9c27:9167:97ac on wlp2s0.*.
+Feb 23 08:13:56 jhondoe-K46CA ntpd[1869]: Listen normally on 10 wlp2s0 192.168.43.155:123
+Feb 23 08:13:56 jhondoe-K46CA ntpd[1869]: Listen normally on 11 wlp2s0 [fe80::2e0f:9c27:9167:97ac%3]:123
+Feb 23 08:13:56 jhondoe-K46CA ntpd[1869]: new interface(s) found: waking up resolver
+Feb 23 08:13:56 jhondoe-K46CA ntpdate[7178]: [0;1;31mthe NTP socket is in use, exiting[0m
+Feb 23 08:13:59 jhondoe-K46CA ntpd[1869]: Soliciting pool server 203.114.74.17
+Feb 23 08:14:00 jhondoe-K46CA ntpd[1869]: Soliciting pool server 203.114.224.252
+Feb 23 08:14:00 jhondoe-K46CA ntpd[1869]: Soliciting pool server 203.160.128.59
+Feb 23 08:14:01 jhondoe-K46CA ntpd[1869]: Soliciting pool server 203.160.128.132
+Feb 23 08:14:04 jhondoe-K46CA ntpd[1869]: Soliciting pool server 2001:67c:1560:8003::c7
+Feb 23 08:17:01 jhondoe-K46CA CRON[7720]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 23 08:17:01 jhondoe-K46CA CRON[7721]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Feb 23 08:17:01 jhondoe-K46CA CRON[7720]: pam_unix(cron:session): session closed for user root
+Feb 23 08:22:34 jhondoe-K46CA systemd[1]: Reloading.
+Feb 23 08:22:35 jhondoe-K46CA systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:22:35 jhondoe-K46CA systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:22:35 jhondoe-K46CA systemd[1]: Stopping LSB: Start NTP daemon...
+-- Subject: Unit ntp.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ntp.service has begun shutting down.
+Feb 23 08:22:35 jhondoe-K46CA ntp[7942]:  * Stopping NTP server ntpd
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: [0;1;39mntpd exiting on signal 15 (Terminated)[0m
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 74.82.59.150 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntp[7942]:    ...done.
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 78.36.11.161 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 193.224.163.77 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 91.189.89.198 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 202.59.163.30 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 203.114.224.31 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA systemd[1]: Stopped LSB: Start NTP daemon.
+-- Subject: Unit ntp.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ntp.service has finished shutting down.
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 193.224.45.106 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 144.217.65.182 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 178.62.16.103 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 78.46.93.106 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 91.236.251.5 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 203.114.74.17 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 203.160.128.59 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 203.114.224.252 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:35 jhondoe-K46CA ntpd[1869]: 203.160.128.132 local addr 192.168.43.155 -> <null>
+Feb 23 08:22:36 jhondoe-K46CA systemd[1]: Reloading.
+Feb 23 08:22:37 jhondoe-K46CA systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:22:37 jhondoe-K46CA systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:23:06 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: WPA: Group rekeying completed with 02:ec:0a:48:16:98 [GTK=CCMP][0m
+Feb 23 08:23:29 jhondoe-K46CA sudo[8464]: [0;1;39m jhondoe : TTY=pts/0 ; PWD=/home/jhondoe ; USER=root ; COMMAND=/bin/mv heroku-cli-v6.15.26-5726b6f-linux-x64/ /usr/local/lib/heroku[0m
+Feb 23 08:23:29 jhondoe-K46CA sudo[8464]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 23 08:23:29 jhondoe-K46CA sudo[8464]: pam_unix(sudo:session): session closed for user root
+Feb 23 08:23:48 jhondoe-K46CA dbus-daemon[969]: Unknown username "geoclue" in message bus configuration file
+Feb 23 08:23:48 jhondoe-K46CA dbus-daemon[969]: Unknown username "whoopsie" in message bus configuration file
+Feb 23 08:23:48 jhondoe-K46CA dbus[969]: [0;1;39m[system] Reloaded configuration[0m
+Feb 23 08:23:48 jhondoe-K46CA dbus-daemon[969]: Unknown username "geoclue" in message bus configuration file
+Feb 23 08:23:48 jhondoe-K46CA dbus-daemon[969]: Unknown username "whoopsie" in message bus configuration file
+Feb 23 08:23:48 jhondoe-K46CA dbus[969]: [0;1;39m[system] Reloaded configuration[0m
+Feb 23 08:24:05 jhondoe-K46CA systemd[1]: Reloading.
+Feb 23 08:24:05 jhondoe-K46CA systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:24:05 jhondoe-K46CA systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:24:08 jhondoe-K46CA sudo[9809]: [0;1;39m jhondoe : TTY=pts/0 ; PWD=/home/jhondoe ; USER=root ; COMMAND=/bin/ln -s /usr/local/lib/heroku/bin/heroku /usr/local/bin/heroku[0m
+Feb 23 08:24:08 jhondoe-K46CA sudo[9809]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 23 08:24:08 jhondoe-K46CA sudo[9809]: pam_unix(sudo:session): session closed for user root
+Feb 23 08:24:12 jhondoe-K46CA dbus-daemon[969]: Unknown username "geoclue" in message bus configuration file
+Feb 23 08:24:12 jhondoe-K46CA dbus-daemon[969]: Unknown username "whoopsie" in message bus configuration file
+Feb 23 08:24:12 jhondoe-K46CA dbus[969]: [0;1;39m[system] Reloaded configuration[0m
+Feb 23 08:24:14 jhondoe-K46CA systemd[1]: Reloading.
+Feb 23 08:24:14 jhondoe-K46CA systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:24:14 jhondoe-K46CA systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:24:14 jhondoe-K46CA systemd[1]: Reloading.
+Feb 23 08:24:14 jhondoe-K46CA systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:24:14 jhondoe-K46CA systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:24:14 jhondoe-K46CA systemd[1]: Starting LSB: Start NTP daemon...
+-- Subject: Unit ntp.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ntp.service has begun starting up.
+Feb 23 08:24:14 jhondoe-K46CA ntp[10227]:  * Starting NTP server ntpd
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10235]: [0;1;39mntpd 4.2.8p4@1.3265-o Wed Feb 14 14:56:29 UTC 2018 (1): Starting[0m
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10235]: Command line: /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 109:116
+Feb 23 08:24:14 jhondoe-K46CA ntp[10227]:    ...done.
+Feb 23 08:24:14 jhondoe-K46CA systemd[1]: Started LSB: Start NTP daemon.
+-- Subject: Unit ntp.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ntp.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10238]: proto: precision = 0.147 usec (-23)
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10238]: Listen and drop on 0 v6wildcard [::]:123
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10238]: Listen and drop on 1 v4wildcard 0.0.0.0:123
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10238]: Listen normally on 2 lo 127.0.0.1:123
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10238]: Listen normally on 3 wlp2s0 192.168.43.155:123
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10238]: Listen normally on 4 tun0 10.8.0.1:123
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10238]: Listen normally on 5 lo [::1]:123
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10238]: Listen normally on 6 wlp2s0 [fe80::2e0f:9c27:9167:97ac%3]:123
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10238]: Listen normally on 7 tun0 [fe80::21ba:f1b9:baa5:b477%4]:123
+Feb 23 08:24:14 jhondoe-K46CA ntpd[10238]: Listening on routing socket on fd #24 for interface updates
+Feb 23 08:24:15 jhondoe-K46CA audit[10246]: AVC apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/ntpd" pid=10246 comm="apparmor_parser"
+Feb 23 08:24:15 jhondoe-K46CA kernel: [0;1;39mkauditd_printk_skb: 3 callbacks suppressed[0m
+Feb 23 08:24:15 jhondoe-K46CA kernel: [0;1;39maudit: type=1400 audit(1519349055.210:15): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/ntpd" pid=10246 comm="apparmor_parser"[0m
+Feb 23 08:24:16 jhondoe-K46CA ntpd[10238]: Soliciting pool server 103.28.56.14
+Feb 23 08:24:16 jhondoe-K46CA ntpd[10238]: Soliciting pool server 119.82.243.189
+Feb 23 08:24:16 jhondoe-K46CA ntpd[10238]: Soliciting pool server 180.250.246.110
+Feb 23 08:24:17 jhondoe-K46CA ntpd[10238]: Soliciting pool server 203.89.31.13
+Feb 23 08:24:17 jhondoe-K46CA ntpd[10238]: Soliciting pool server 114.141.48.158
+Feb 23 08:24:18 jhondoe-K46CA ntpd[10238]: Soliciting pool server 202.162.32.12
+Feb 23 08:24:18 jhondoe-K46CA ntpd[10238]: Soliciting pool server 103.31.225.225
+Feb 23 08:24:18 jhondoe-K46CA ntpd[10238]: Soliciting pool server 203.160.128.59
+Feb 23 08:24:19 jhondoe-K46CA ntpd[10238]: Soliciting pool server 202.59.163.30
+Feb 23 08:24:19 jhondoe-K46CA dbus-daemon[969]: Unknown username "geoclue" in message bus configuration file
+Feb 23 08:24:19 jhondoe-K46CA dbus-daemon[969]: Unknown username "whoopsie" in message bus configuration file
+Feb 23 08:24:19 jhondoe-K46CA dbus[969]: [0;1;39m[system] Reloaded configuration[0m
+Feb 23 08:24:19 jhondoe-K46CA ntpd[10238]: Soliciting pool server 203.114.224.31
+Feb 23 08:24:19 jhondoe-K46CA ntpd[10238]: Soliciting pool server 203.114.225.252
+Feb 23 08:24:20 jhondoe-K46CA ntpd[10238]: Soliciting pool server 91.189.89.199
+Feb 23 08:24:20 jhondoe-K46CA ntpd[10238]: Soliciting pool server 91.189.91.157
+Feb 23 08:24:20 jhondoe-K46CA ntpd[10238]: Soliciting pool server 203.160.128.132
+Feb 23 08:24:20 jhondoe-K46CA ntpd[10238]: Soliciting pool server 2001:df2:2a00::903:123
+Feb 23 08:24:21 jhondoe-K46CA ntpd[10238]: Soliciting pool server 91.189.89.198
+Feb 23 08:24:22 jhondoe-K46CA ntpd[10238]: Soliciting pool server 91.189.94.4
+Feb 23 08:28:34 jhondoe-K46CA systemd[1]: Reloading.
+Feb 23 08:28:34 jhondoe-K46CA systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:28:34 jhondoe-K46CA systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:33:06 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: WPA: Group rekeying completed with 02:ec:0a:48:16:98 [GTK=CCMP][0m
+Feb 23 08:34:10 jhondoe-K46CA ntpd[10238]: 91.189.89.199 local addr 192.168.43.155 -> <null>
+Feb 23 08:34:14 jhondoe-K46CA ntpd[10238]: 91.189.89.198 local addr 192.168.43.155 -> <null>
+Feb 23 08:34:15 jhondoe-K46CA ntpd[10238]: 91.189.94.4 local addr 192.168.43.155 -> <null>
+Feb 23 08:38:16 jhondoe-K46CA dhclient[7284]: DHCPREQUEST of 192.168.43.155 on wlp2s0 to 192.168.43.1 port 67 (xid=0x786f8afe)
+Feb 23 08:38:16 jhondoe-K46CA dhclient[7284]: DHCPACK of 192.168.43.155 from 192.168.43.1
+Feb 23 08:38:16 jhondoe-K46CA NetworkManager[1017]: <info>  [1519349896.4570]   address 192.168.43.155
+Feb 23 08:38:16 jhondoe-K46CA NetworkManager[1017]: <info>  [1519349896.4571]   plen 24 (255.255.255.0)
+Feb 23 08:38:16 jhondoe-K46CA NetworkManager[1017]: <info>  [1519349896.4572]   gateway 192.168.43.1
+Feb 23 08:38:16 jhondoe-K46CA NetworkManager[1017]: <info>  [1519349896.4572]   server identifier 192.168.43.1
+Feb 23 08:38:16 jhondoe-K46CA NetworkManager[1017]: <info>  [1519349896.4572]   lease time 3600
+Feb 23 08:38:16 jhondoe-K46CA NetworkManager[1017]: <info>  [1519349896.4573]   hostname 'jhondoe-K46CA'
+Feb 23 08:38:16 jhondoe-K46CA NetworkManager[1017]: <info>  [1519349896.4573]   nameserver '192.168.43.1'
+Feb 23 08:38:16 jhondoe-K46CA NetworkManager[1017]: <info>  [1519349896.4573] dhcp4 (wlp2s0): state changed bound -> bound
+Feb 23 08:38:16 jhondoe-K46CA dbus[969]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'[0m
+Feb 23 08:38:16 jhondoe-K46CA systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Unit NetworkManager-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has begun starting up.
+Feb 23 08:38:16 jhondoe-K46CA dbus[969]: [0;1;39m[system] Successfully activated service 'org.freedesktop.nm_dispatcher'[0m
+Feb 23 08:38:16 jhondoe-K46CA systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Unit NetworkManager-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:38:16 jhondoe-K46CA dhclient[7284]: bound to 192.168.43.155 -- renewal in 1257 seconds.
+Feb 23 08:38:16 jhondoe-K46CA nm-dispatcher[12716]: req:1 'dhcp4-change' [wlp2s0]: new request (1 scripts)
+Feb 23 08:38:16 jhondoe-K46CA nm-dispatcher[12716]: req:1 'dhcp4-change' [wlp2s0]: start running ordered scripts...
+Feb 23 08:38:47 jhondoe-K46CA ntpd[10238]: 203.89.31.13 local addr 192.168.43.155 -> <null>
+Feb 23 08:39:01 jhondoe-K46CA CRON[12765]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 23 08:39:01 jhondoe-K46CA CRON[12766]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Feb 23 08:39:02 jhondoe-K46CA CRON[12765]: pam_unix(cron:session): session closed for user root
+Feb 23 08:42:42 jhondoe-K46CA cinnamon-screensaver-pam-helper[12857]: [0;1;31mpam_ecryptfs: seteuid error[0m
+Feb 23 08:42:42 jhondoe-K46CA cinnamon-screensaver-pam-helper[12857]: gkr-pam: unlocked login keyring
+Feb 23 08:42:57 jhondoe-K46CA ntpd[10238]: 91.189.91.157 local addr 192.168.43.155 -> <null>
+Feb 23 08:43:06 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: WPA: Group rekeying completed with 02:ec:0a:48:16:98 [GTK=CCMP][0m
+Feb 23 08:43:22 jhondoe-K46CA ntpd[10238]: 203.114.225.252 local addr 192.168.43.155 -> <null>
+Feb 23 08:48:59 jhondoe-K46CA ntpd[10238]: 180.250.246.110 local addr 192.168.43.155 -> <null>
+Feb 23 08:49:40 jhondoe-K46CA dbus[969]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'[0m
+Feb 23 08:49:40 jhondoe-K46CA systemd[1]: Starting Hostname Service...
+-- Subject: Unit systemd-hostnamed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-hostnamed.service has begun starting up.
+Feb 23 08:49:40 jhondoe-K46CA dbus[969]: [0;1;39m[system] Successfully activated service 'org.freedesktop.hostname1'[0m
+Feb 23 08:49:40 jhondoe-K46CA systemd[1]: Started Hostname Service.
+-- Subject: Unit systemd-hostnamed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-hostnamed.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:49:54 jhondoe-K46CA org.gtk.vfs.Daemon[1975]: [0;1;39m** (gvfsd:2045): WARNING **: dbus_mount_reply: Error from org.gtk.vfs.Mountable.mount(): Failed to retrieve share list from server: Connection timed out[0m
+Feb 23 08:49:54 jhondoe-K46CA org.gtk.vfs.Daemon[1975]: [0;1;39m** (process:13282): WARNING **: Couldn't create directory monitor on smb://x-gnome-default-workgroup/. Error: The specified location is not mounted[0m
+Feb 23 08:52:42 jhondoe-K46CA kernel: perf: interrupt took too long (2637 > 2500), lowering kernel.perf_event_max_sample_rate to 75750
+Feb 23 08:53:07 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: WPA: Group rekeying completed with 02:ec:0a:48:16:98 [GTK=CCMP][0m
+Feb 23 08:55:17 jhondoe-K46CA dbus[969]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'[0m
+Feb 23 08:55:17 jhondoe-K46CA systemd[1]: Starting Hostname Service...
+-- Subject: Unit systemd-hostnamed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-hostnamed.service has begun starting up.
+Feb 23 08:55:17 jhondoe-K46CA org.gtk.vfs.Daemon[1975]: [0;1;39m** (process:2263): WARNING **: send_infos_cb: No such interface 'org.gtk.vfs.Enumerator' on object at path /org/gtk/vfs/client/enumerator/3 (g-dbus-error-quark, 19)[0m
+Feb 23 08:55:17 jhondoe-K46CA org.gtk.vfs.Daemon[1975]: [0;1;39m** (process:2263): WARNING **: send_done_cb: No such interface 'org.gtk.vfs.Enumerator' on object at path /org/gtk/vfs/client/enumerator/3 (g-dbus-error-quark, 19)[0m
+Feb 23 08:55:18 jhondoe-K46CA dbus[969]: [0;1;39m[system] Successfully activated service 'org.freedesktop.hostname1'[0m
+Feb 23 08:55:18 jhondoe-K46CA systemd[1]: Started Hostname Service.
+-- Subject: Unit systemd-hostnamed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-hostnamed.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:59:14 jhondoe-K46CA dhclient[7284]: DHCPREQUEST of 192.168.43.155 on wlp2s0 to 192.168.43.1 port 67 (xid=0x786f8afe)
+Feb 23 08:59:14 jhondoe-K46CA dhclient[7284]: DHCPACK of 192.168.43.155 from 192.168.43.1
+Feb 23 08:59:14 jhondoe-K46CA NetworkManager[1017]: <info>  [1519351154.4306]   address 192.168.43.155
+Feb 23 08:59:14 jhondoe-K46CA NetworkManager[1017]: <info>  [1519351154.4799]   plen 24 (255.255.255.0)
+Feb 23 08:59:14 jhondoe-K46CA NetworkManager[1017]: <info>  [1519351154.4801]   gateway 192.168.43.1
+Feb 23 08:59:14 jhondoe-K46CA NetworkManager[1017]: <info>  [1519351154.4801]   server identifier 192.168.43.1
+Feb 23 08:59:14 jhondoe-K46CA NetworkManager[1017]: <info>  [1519351154.4801]   lease time 3600
+Feb 23 08:59:14 jhondoe-K46CA NetworkManager[1017]: <info>  [1519351154.4802]   hostname 'jhondoe-K46CA'
+Feb 23 08:59:14 jhondoe-K46CA NetworkManager[1017]: <info>  [1519351154.4803]   nameserver '192.168.43.1'
+Feb 23 08:59:14 jhondoe-K46CA NetworkManager[1017]: <info>  [1519351154.5284] dhcp4 (wlp2s0): state changed bound -> bound
+Feb 23 08:59:14 jhondoe-K46CA dbus[969]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'[0m
+Feb 23 08:59:14 jhondoe-K46CA systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Unit NetworkManager-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has begun starting up.
+Feb 23 08:59:15 jhondoe-K46CA dhclient[7284]: bound to 192.168.43.155 -- renewal in 1593 seconds.
+Feb 23 08:59:15 jhondoe-K46CA dbus[969]: [0;1;39m[system] Successfully activated service 'org.freedesktop.nm_dispatcher'[0m
+Feb 23 08:59:15 jhondoe-K46CA systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Unit NetworkManager-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 08:59:15 jhondoe-K46CA nm-dispatcher[14192]: req:1 'dhcp4-change' [wlp2s0]: new request (1 scripts)
+Feb 23 08:59:15 jhondoe-K46CA nm-dispatcher[14192]: req:1 'dhcp4-change' [wlp2s0]: start running ordered scripts...
+Feb 23 09:00:46 jhondoe-K46CA bluetoothd[1046]: [0;1;31mFailed to set mode: Blocked through rfkill (0x12)[0m
+Feb 23 09:00:46 jhondoe-K46CA bluetoothd[1046]: [0;1;31mFailed to set mode: Blocked through rfkill (0x12)[0m
+Feb 23 09:00:54 jhondoe-K46CA systemd[1]: Starting Load/Save RF Kill Switch Status...
+-- Subject: Unit systemd-rfkill.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-rfkill.service has begun starting up.
+Feb 23 09:00:54 jhondoe-K46CA systemd[1]: Started Load/Save RF Kill Switch Status.
+-- Subject: Unit systemd-rfkill.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-rfkill.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 09:01:56 jhondoe-K46CA obexd[2205]: CONNECT(0x0), (null)(0xffffffff)
+Feb 23 09:01:56 jhondoe-K46CA obexd[2205]: CONNECT(0x0), (null)(0x0)
+Feb 23 09:02:20 jhondoe-K46CA obexd[2205]: [0;1;31mdisconnected: Transport got disconnected[0m
+Feb 23 09:02:20 jhondoe-K46CA bluetoothd[1046]: [0;1;31mUnable to get io data for Object Push: getpeername: Transport endpoint is not connected (107)[0m
+Feb 23 09:02:52 jhondoe-K46CA org.gtk.vfs.Daemon[1975]: [0;1;39m** (gvfsd:2045): WARNING **: dbus_mount_reply: Error from org.gtk.vfs.Mountable.mount(): Failed to retrieve share list from server: No such file or directory[0m
+Feb 23 09:02:55 jhondoe-K46CA org.gtk.vfs.Daemon[1975]: [0;1;39m** (gvfsd:2045): WARNING **: dbus_mount_reply: Error from org.gtk.vfs.Mountable.mount(): Failed to retrieve share list from server: No such file or directory[0m
+Feb 23 09:02:58 jhondoe-K46CA org.gtk.vfs.Daemon[1975]: [0;1;39m** (gvfsd:2045): WARNING **: dbus_mount_reply: Error from org.gtk.vfs.Mountable.mount(): Failed to retrieve share list from server: No such file or directory[0m
+Feb 23 09:03:06 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: WPA: Group rekeying completed with 02:ec:0a:48:16:98 [GTK=CCMP][0m
+Feb 23 09:03:11 jhondoe-K46CA kernel: input: AC:D1:B8:D5:3B:0C as /devices/virtual/input/input18
+Feb 23 09:03:12 jhondoe-K46CA bluetoothd[1046]: /org/bluez/hci0/dev_AC_D1_B8_D5_3B_0C/fd0: fd(35) ready
+Feb 23 09:03:12 jhondoe-K46CA rtkit-daemon[2140]: Supervising 3 threads of 1 processes of 1 users.
+Feb 23 09:03:12 jhondoe-K46CA rtkit-daemon[2140]: Successfully made thread 14437 of process 2133 (n/a) owned by '1000' RT at priority 5.
+Feb 23 09:03:12 jhondoe-K46CA rtkit-daemon[2140]: Supervising 4 threads of 1 processes of 1 users.
+Feb 23 09:03:19 jhondoe-K46CA dbus[969]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'[0m
+Feb 23 09:03:19 jhondoe-K46CA systemd[1]: Starting Hostname Service...
+-- Subject: Unit systemd-hostnamed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-hostnamed.service has begun starting up.
+Feb 23 09:03:19 jhondoe-K46CA dbus[969]: [0;1;39m[system] Successfully activated service 'org.freedesktop.hostname1'[0m
+Feb 23 09:03:19 jhondoe-K46CA systemd[1]: Started Hostname Service.
+-- Subject: Unit systemd-hostnamed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-hostnamed.service has finished starting up.
+-- 
+-- The start-up result is done.
+Feb 23 09:03:31 jhondoe-K46CA obexd[2205]: [0;1;31mUnable to find service record[0m
+Feb 23 09:03:55 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 612)[0m
+Feb 23 09:03:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:03:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:03:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:03:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:03:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:03:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:03:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:03:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:03:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:03:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:03:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:03 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:03 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:03 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:04:43 jhondoe-K46CA rtkit-daemon[2140]: Supervising 3 threads of 1 processes of 1 users.
+Feb 23 09:04:43 jhondoe-K46CA rtkit-daemon[2140]: Successfully made thread 14488 of process 2133 (n/a) owned by '1000' RT at priority 5.
+Feb 23 09:04:43 jhondoe-K46CA rtkit-daemon[2140]: Supervising 4 threads of 1 processes of 1 users.
+Feb 23 09:04:43 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:04:43 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:04:43 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:43 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:44 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:45 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:46 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:46 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:46 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:46 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:46 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:47 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:48 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:49 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:49 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:49 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:49 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:49 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:49 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:50 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:04:51 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:52 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:58 jhondoe-K46CA rtkit-daemon[2140]: Supervising 3 threads of 1 processes of 1 users.
+Feb 23 09:04:58 jhondoe-K46CA rtkit-daemon[2140]: Successfully made thread 14506 of process 2133 (n/a) owned by '1000' RT at priority 5.
+Feb 23 09:04:58 jhondoe-K46CA rtkit-daemon[2140]: Supervising 4 threads of 1 processes of 1 users.
+Feb 23 09:04:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:58 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:04:59 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:00 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:01 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:02 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:10 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:10 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:10 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:10 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:11 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 17)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:12 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:15 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 367)[0m
+Feb 23 09:05:15 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:16 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:16 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:16 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:16 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:16 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:16 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:16 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:16 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:05:16 jhondoe-K46CA kernel: [0;1;31mBluetooth: Unexpected start frame (len 54)[0m
+Feb 23 09:06:11 jhondoe-K46CA dbus[969]: [0;1;39m[system] Rejected send message, 3 matched rules; type="method_return", sender=":1.44" (uid=1000 pid=2133 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="(unset)" requested_reply="0" destination=":1.2" (uid=0 pid=1046 comm="/usr/lib/bluetooth/bluetoothd ")[0m
+Feb 23 09:06:11 jhondoe-K46CA acpid[935]: [0;1;39minput device has been disconnected, fd 15[0m
+Feb 23 09:09:01 jhondoe-K46CA CRON[14625]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 23 09:09:01 jhondoe-K46CA CRON[14626]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Feb 23 09:09:01 jhondoe-K46CA CRON[14625]: pam_unix(cron:session): session closed for user root
+Feb 23 09:13:06 jhondoe-K46CA wpa_supplicant[1328]: [0;1;39mwlp2s0: WPA: Group rekeying completed with 02:ec:0a:48:16:98 [GTK=CCMP][0m
+Feb 23 09:16:14 jhondoe-K46CA sudo[15175]: [0;1;39m jhondoe : TTY=pts/1 ; PWD=/home/jhondoe/SandBox/Laravel/kereta ; USER=root ; COMMAND=/etc/init.d/mysql stop[0m
+Feb 23 09:16:14 jhondoe-K46CA sudo[15175]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 23 09:16:14 jhondoe-K46CA systemd[1]: Stopped MariaDB 10.2.13 database server.
+-- Subject: Unit mariadb.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mariadb.service has finished shutting down.
+Feb 23 09:16:14 jhondoe-K46CA sudo[15175]: pam_unix(sudo:session): session closed for user root
+Feb 23 09:16:39 jhondoe-K46CA sudo[15232]: [0;1;39m jhondoe : TTY=pts/1 ; PWD=/home/jhondoe/SandBox/Laravel/kereta ; USER=root ; COMMAND=/etc/init.d/mysql start[0m
+Feb 23 09:16:39 jhondoe-K46CA sudo[15232]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 23 09:16:39 jhondoe-K46CA systemd[1]: Starting MariaDB 10.2.13 database server...
+-- Subject: Unit mariadb.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mariadb.service has begun starting up.
+Feb 23 09:16:40 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:40 140148183546048 [Note] /usr/sbin/mysqld (mysqld 10.2.13-MariaDB-10.2.13+maria~xenial-log) starting as process 15410 ...[0m
+Feb 23 09:16:41 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:41 140148183546048 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins[0m
+Feb 23 09:16:41 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:41 140148183546048 [Note] InnoDB: Uses event mutexes[0m
+Feb 23 09:16:41 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:41 140148183546048 [Note] InnoDB: Compressed tables use zlib 1.2.8[0m
+Feb 23 09:16:41 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:41 140148183546048 [Note] InnoDB: Using Linux native AIO[0m
+Feb 23 09:16:41 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:41 140148183546048 [Note] InnoDB: Number of pools: 1[0m
+Feb 23 09:16:41 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:41 140148183546048 [Note] InnoDB: Using SSE2 crc32 instructions[0m
+Feb 23 09:16:41 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:41 140148183546048 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M[0m
+Feb 23 09:16:41 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:41 140148183546048 [Note] InnoDB: Completed initialization of buffer pool[0m
+Feb 23 09:16:41 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:41 140147242391296 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().[0m
+Feb 23 09:16:41 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:41 140148183546048 [Note] InnoDB: Highest supported file format is Barracuda.[0m
+Feb 23 09:16:42 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:42 140148183546048 [Note] InnoDB: Transaction 79742 was in the XA prepared state.[0m
+Feb 23 09:16:42 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:42 140148183546048 [Note] InnoDB: 1 transaction(s) which must be rolled back or cleaned up in total 0 row operations to undo[0m
+Feb 23 09:16:42 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:42 140148183546048 [Note] InnoDB: Trx id counter is 82176[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] InnoDB: 128 out of 128 rollback segments are active.[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140147677599488 [Note] InnoDB: Starting in background the rollback of recovered transactions[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140147677599488 [Note] InnoDB: Rollback of non-prepared transactions completed[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] InnoDB: Creating shared tablespace for temporary tables[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] InnoDB: File './ibtmp1' size is now 12 MB.[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] InnoDB: 5.7.21 started; log sequence number 42239236[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140147081320192 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] Plugin 'FEEDBACK' is disabled.[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140147081320192 [Note] InnoDB: Buffer pool(s) load completed at 180223  9:16:43[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] InnoDB: Starting recovery for XA transactions...[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] InnoDB: Transaction 79742 in prepared state after recovery[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] InnoDB: Transaction contains changes to 1 rows[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] InnoDB: 1 transactions in prepared state after recovery[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [Note] Found 1 prepared transaction(s) in InnoDB[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [ERROR] Found 1 prepared transactions! It means that mysqld was not shut down properly last time and critical recovery information (last binlog or tc.log file) was manually deleted after a crash. You have to start mysqld with --tc-heuristic-recover switch to commit or rollback pending transactions.[0m
+Feb 23 09:16:43 jhondoe-K46CA mysqld[15410]: [0;1;31m2018-02-23  9:16:43 140148183546048 [ERROR] Aborting[0m
+Feb 23 09:16:45 jhondoe-K46CA systemd[1]: [0;1;39mmariadb.service: Main process exited, code=exited, status=1/FAILURE[0m
+Feb 23 09:16:45 jhondoe-K46CA systemd[1]: [0;1;31mFailed to start MariaDB 10.2.13 database server.[0m
+-- Subject: Unit mariadb.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mariadb.service has failed.
+-- 
+-- The result is failed.
+Feb 23 09:16:45 jhondoe-K46CA systemd[1]: [0;1;39mmariadb.service: Unit entered failed state.[0m
+Feb 23 09:16:45 jhondoe-K46CA systemd[1]: [0;1;39mmariadb.service: Failed with result 'exit-code'.[0m
+Feb 23 09:16:45 jhondoe-K46CA sudo[15232]: pam_unix(sudo:session): session closed for user root

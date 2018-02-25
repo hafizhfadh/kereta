@@ -12,6 +12,8 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        @stack('style')
+        {!! Charts::styles() !!}
     </head>
     <body>
         <div id="app">
