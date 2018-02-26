@@ -19,7 +19,7 @@
     <ul class="menu-list">
       <li><a>Payments</a></li>
       <li><a href="{{ route('booking.index') }}">Booking</a></li>
-      <li><a>Customer Tickets</a></li>
+      <li><a href="{{ route('customer_ticket.index') }}">Customer Tickets</a></li>
     </ul>
   </aside>
 </div>
