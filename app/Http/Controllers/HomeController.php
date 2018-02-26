@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Charts;
 use App\Models\Train;
+use App\Models\Station;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,23 +26,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // $train = Train::where('active', 1)
-        //        ->orderBy('name', 'desc')
-        //        ->take(10)
-        //        ->get();
-        // $chart = Charts::multi('bar')
-        //     // Setup the chart settings
-        //     ->title("Jumlah Kereta")
-        //     // A dimension of 0 means it will take 100% of the space
-        //     // ->dimensions(0, 400) // Width x Height
-        //     // This defines a preset of colors already done:)
-        //     ->template("hightchart")
-        //     // You could always set them manually
-        //     ->colors(['#2196F3', '#F44336', '#FFC107'])
-        //     // Setup the diferent datasets (this is a multi chart)
-        //     ->dataset('Kereta', $a->id)
-        //     // Setup what the values mean
-        //     ->labels(['One', 'Two', 'Three']);
-        return view('home');
+        $train = Train::all();
+        $station = Station::all();
+        $chart = Charts::create('pie', 'google')
+                      ->title('Data Kereta')
+                      ->labels(['Jumlah Kereta', 'Jumlah Stasiun'])
+                      ->values([$train->count(), $station->count()])
+                      ->dimensions(1000,500)
+                      ->responsive(true);
+        return view('home', compact('chart'));
     }
 }
