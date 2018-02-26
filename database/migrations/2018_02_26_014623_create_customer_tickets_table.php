@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTrainsTable extends Migration
+class CreateCustomerTicketsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateTrainsTable extends Migration
      */
     public function up()
     {
-        Schema::create('trains', function (Blueprint $table) {
+        Schema::create('customer_tickets', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('train_name')->unique();
+            $table->integer('id_booking')->unsigned()->index()->nullable();
+            $table->string('token');
+            $table->foreign('id_booking')->references('id')->on('bookings')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateTrainsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('trains');
+        Schema::dropIfExists('customer_tickets');
     }
 }

@@ -30,8 +30,6 @@
 
           </div>
 
-          <b-checkbox name="remember" class="m-t-20"></b-checkbox>
-
           <button class="button is-success is-outlined is-fullwidth m-t-30">Log In</button>
         </form>
       </div> <!-- end of .card-content -->

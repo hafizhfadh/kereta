@@ -18,4 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/train/search', 'Select2Controller@train');
+Route::get('/schedule/search', 'Select2Controller@schedule');
 Route::get('/station/search', 'Select2Controller@station');

@@ -84,7 +84,7 @@ class RegisterController extends Controller
         $this->validator($request->all())->validate();
         $user = $this->create($request->all());
         UserVerification::generate($user);
-        UserVerification::send($user, 'Email Verification E-ticket', $from = 'hafizhfadh94@gmail.com', $name = 'Hafizh Fadhlurrohman');
-        return back()->withAlert('Register successfully, please verify your email.');
+        UserVerification::send($user, 'Email Verification E-ticket', $from = 'android2629@gmail.com', $name = 'Aditia Pebriansyah');
+        return back()->withAlert('Pendaftaran Berhasil, silahkan cek email anda untuk verifikasi');
     }
 }

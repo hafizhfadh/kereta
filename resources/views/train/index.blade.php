@@ -38,8 +38,8 @@
                             <tr>
                               <td>{{ $x }}</td>
                               <td>{{ $a->train_name }}</td>
-                              <td>{{ $a->exec_seat + $a->bus_seat + $a->eco_seat }}</td>
-                              <td>{{ "Rp. ".number_format($a->price,2,",",".") }}</td>
+                              <td>{{ $a->seat->exec_seat + $a->seat->bus_seat + $a->seat->eco_seat }}</td>
+                              <td>{{ "Rp. ".number_format($a->seat->price,2,",",".") }}</td>
                               <td>
                                 <div class="columns is-multiline is-gapless">
                                   <div class="column is-12">
