@@ -4,7 +4,11 @@
   <section>
     <div class='carousel carousel-animated carousel-animate-slide' data-autoplay="true">
       <div class='carousel-container'>
-        <div class='carousel-item has-background is-active'>
+      <div class='carousel-item has-background is-active'>
+          <img class="is-background" src="{{ asset('image/logo.jpeg') }}" alt="" width="50" height="50" />
+          <div class="title">Annisa Edrian Fahlivi</div>
+        </div>
+        <div class='carousel-item has-background'>
           <img class="is-background" src="https://images.pexels.com/photos/433301/pexels-photo-433301.jpeg?w=1290&h=970&auto=compress&cs=tinysrgb" alt="" width="640" height="310" />
           <div class="title">Adventrip Situs Pemesanan Tiket Kereta Online</div>
         </div>
@@ -41,18 +45,18 @@
         <div class="columns">
           <div class="column">
             <div class="field">
-              <label class="label">Dari</label>
+              <label class="label">Stasiun Asal</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Stasiun Asal">
+                <input class="input" type="text">
               </div>
             </div>
           </div>
 
           <div class="column">
             <div class="field">
-              <label class="label">Ke</label>
+              <label class="label">Stasiun Tujuan</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Stasiun Tujuan">
+                <input class="input" type="text">
               </div>
             </div>
           </div>
@@ -84,29 +88,49 @@
               </div>
             </div>
           </div>
-
           <div class="column">
             <div class="field">
-              <label class="label">Penumpang</label>
+              <label class="label">Dewasa (+3 Tahun)</label>
               <div class="control">
                 <div class="select">
-                  <select>
-                    <option>Dewasa +3thn</option>
-                    <option>Bayi -3thn</option>
-                  </select>
+                <select >
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
                 </div>
               </div>
             </div>
           </div>
-
+          <div class="column">
+            <div class="field">
+              <label class="label">Bayi (-3 Tahun)</label>
+              <div class="control">
+                <div class="select">
+                <select >
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="column">
             <div class="field">
               <label class="label">Pencarian Tiket</label>
               <div class="control">
-                <button class="button is-link">Cari</button>
+              <a href="view.index"class="button is-info">Cari</a>
               </div>
             </div>
           </div>
+          
 
         </div>
 
