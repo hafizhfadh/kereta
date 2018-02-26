@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Train;
+use App\Models\Train_Class;
 use Illuminate\Database\Seeder;
 class TrainSeeder extends Seeder
 {
@@ -18,11 +19,15 @@ class TrainSeeder extends Seeder
         // Create Train
         $train = new Train();
         $train->train_name = 'Kereta '.$faker->firstName;
-        $train->exec_seat = rand(1,50);
-        $train->bus_seat = rand(1,50);
-        $train->eco_seat = rand(1,50);
-        $train->price = rand(100000,500000);
         $train->save();
+
+        $seat = new Train_Class();
+        $seat->train_id = $train->id;
+        $seat->exec_seat = rand(1,50);
+        $seat->bus_seat = rand(1,50);
+        $seat->eco_seat = rand(1,50);
+        $seat->price = rand(100000,500000);
+        $seat->save();
       }
     }
 }

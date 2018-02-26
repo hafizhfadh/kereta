@@ -32,85 +32,91 @@
     </div>
   </section>
 
-  <section class="columns m-t-20">
+  <section class="columns m-t-20 p-l-100">
     <div class="column is-11">
       <div class="card">
         <div class="card-header">
           <h3 class="card-header-title">Booking Ticket</h3>
         </div>
         <div class="card-content">
-          <div class="columns">
-            <div class="column">
-              <div class="field">
-                <label class="label">Dari</label>
-                <div class="control">
-                  <select class="input" type="text" placeholder="Stasiun Asal" name="stasiun_keberangkatan" id="dari"></select>
-                </div>
+          <form class="form-vertical" action="{{ route('buy-ticket') }}" method="post">
+            @csrf
+            <div class="field">
+              <label class="label">Nama Customer</label>
+              <div class="control">
+                <input type="text" name="nama_customer" class="input" placeholder="e.g Hafizh Fadhlurrohman">
               </div>
             </div>
+            <div class="field">
+              <label class="label">Nama Kereta</label>
+              <div class="control">
+                <select class="input" type="text" name="nama_kereta" id="trains"></select>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <label class="label">Stasiun Keberangkatan</label>
+                  <div class="control">
+                    <select class="input" type="text" placeholder="Stasiun Asal" name="stasiun_keberangkatan" id="dari"></select>
+                  </div>
+                </div>
+              </div>
 
-            <div class="column">
-              <div class="field">
-                <label class="label">Ke</label>
-                <div class="control">
-                  <select class="input" type="text" placeholder="Stasiun Asal" name="stasiun_kedatangan" id="ke"></select>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <div class="field">
-                <label class="label">Pergi</label>
-                <div class="control">
-                  <input class="input" type="date">
-                </div>
-              </div>
-            </div>
-
-            <div class="column is-hidden" id="pulang">
-              <div class="field">
-                <label class="label">Pulang</label>
-                <div class="control">
-                  <input id="datepickerDemo" class="input" type="date" placeholder="Tahun/Bulan/Tanggal">
-                </div>
-              </div>
-            </div>
-
-            <div class="column m-t-40">
-              <div class="field">
-                <div class="control">
-                  <input id="pulangPergi" type="checkbox" class="switch is-rounded">
-                  <label for="pulangPergi">Pulang Pergi?</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="field">
-                <label class="label">Penumpang</label>
-                <div class="control">
-                  <div class="select">
-                    <select>
-                      <option>Dewasa +3thn</option>
-                      <option>Bayi -3thn</option>
-                    </select>
+              <div class="column">
+                <div class="field">
+                  <label class="label">Stasiun Tujuan</label>
+                  <div class="control">
+                    <select class="input" type="text" placeholder="Stasiun Asal" name="stasiun_kedatangan" id="ke"></select>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <label class="label">Pergi</label>
+                  <div class="control">
+                    <input class="input" type="date" name="waktu_keberangkatan">
+                  </div>
+                </div>
+              </div>
 
-            <div class="column">
-              <div class="field">
-                <label class="label">Pencarian Tiket</label>
-                <div class="control">
-                  <button class="button is-link">Cari</button>
+              <div class="column is-hidden" id="pulang">
+                <div class="field">
+                  <label class="label">Pulang</label>
+                  <div class="control">
+                    <input class="input" type="date" name="waktu_pulang">
+                  </div>
+                </div>
+              </div>
+
+              <div class="column m-t-40">
+                <div class="field">
+                  <div class="control">
+                    <input id="pulangPergi" type="checkbox" class="switch is-rounded">
+                    <label for="pulangPergi">Pulang Pergi?</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="field">
+                  <div class="control">
+                    <label class="label">Jumlah Tiket</label>
+                    <input type="text" name="jumlah_tiket" class="input" max="4">
+                  </div>
                 </div>
               </div>
             </div>
-
-          </div>
-
+            <div class="column">
+              <div class="field">
+                <div class="control">
+                  <button class="button is-link" type="submit">Beli</button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -160,6 +166,25 @@
               return {
                 text: item.stasiun_keberangkatan,
                 id: item.stasiun_keberangkatan
+              }
+            })
+          };
+        },
+        cache: true
+      }
+    });
+    $('#trains').select2({
+      placeholder: 'Cari',
+      ajax: {
+        url: '/api/train/search',
+        dataType: 'json',
+        delay: 250,
+        processResults: function (data) {
+          return {
+            results:  $.map(data, function (item) {
+              return {
+                text: item.train_name,
+                id: item.train_name
               }
             })
           };

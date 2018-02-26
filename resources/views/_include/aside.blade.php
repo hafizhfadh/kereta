@@ -1,3 +1,4 @@
+@role('superadministrator')
 <div class="column m-l-10 m-t-10 is-2">
   <aside class="menu">
     <p class="menu-label">
@@ -23,3 +24,4 @@
     </ul>
   </aside>
 </div>
+@endrole
