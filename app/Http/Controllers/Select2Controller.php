@@ -47,4 +47,24 @@ class Select2Controller extends Controller
 
       return response()->json($data);
   }
+
+  public function schedule(Request $request)
+  {
+    $data = [];
+
+      if($request->has('q')){
+          $search = $request->q;
+          $data = DB::table("schedule_trains")
+              ->select("id","stasiun_keberangkatan")
+              ->where('stasiun_keberangkatan','LIKE',"%$search%")
+              ->get();
+      } else {
+        $data = DB::table("schedule_trains")
+            ->select("id","stasiun_keberangkatan")
+            ->get();
+      }
+
+
+      return response()->json($data);
+  }
 }

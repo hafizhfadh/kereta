@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
@@ -39,7 +39,7 @@ class ScheduleTrainController extends Controller
         $train_schedule = new Train_Schedule;
         $train_schedule->nama_kereta = $request->input('nama_kereta');
         $train_schedule->stasiun_keberangkatan = $request->input('stasiun_keberangkatan');
-        $train_schedule->waktu_Keberangkatan = $request->input('waktu_keberangkatan');
+        $train_schedule->waktu_keberangkatan = $request->input('waktu_keberangkatan');
         $train_schedule->stasiun_kedatangan = $request->input('stasiun_kedatangan');
         $train_schedule->waktu_kedatangan = $request->input('waktu_kedatangan');
         $train_schedule->waktu_yang_ditempuh = $request->input('waktu_yang_ditempuh');
@@ -79,7 +79,7 @@ class ScheduleTrainController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    { 
+    {
         $train_schedule = Train_Schedule::find($id);
         $train_schedule->nama_kereta = $request->input('nama_kereta');
         $train_schedule->stasiun_keberangkatan = $request->input('stasiun_keberangkatan');
@@ -90,7 +90,7 @@ class ScheduleTrainController extends Controller
         $train_schedule->save();
 
         return redirect('/train_schedule')->with('success','Train_Schedule Updated');
-        
+
     }
 
     /**

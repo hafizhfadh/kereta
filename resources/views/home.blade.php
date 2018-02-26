@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="columns is-marginless">
-            <div class="column is-4">
+            <div class="column is-6">
                 <nav class="card">
                     <header class="card-header">
                         <p class="card-header-title">
@@ -12,7 +12,7 @@
                     </header>
 
                     <div class="card-content">
-                        {{-- {!! $chart->html() !!} --}}
+                        {!! $chart->html() !!}
                     </div>
                 </nav>
             </div>
@@ -22,5 +22,5 @@
 
 @push('scripts')
   {!! Charts::scripts() !!}
-  {{-- {!! $chart->script() !!} --}}
+  {!! $chart->script() !!}
 @endpush
