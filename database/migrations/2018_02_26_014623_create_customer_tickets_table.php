@@ -15,8 +15,9 @@ class CreateCustomerTicketsTable extends Migration
     {
         Schema::create('customer_tickets', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('id_booking');
-            $table->rememberToken();
+            $table->integer('id_booking')->unsigned()->index()->nullable();
+            $table->string('token');
+            $table->foreign('id_booking')->references('id')->on('bookings')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -15,7 +15,7 @@ class CustomerTicket extends Controller
      */
     public function index()
     {
-        $customer_tickets = Customer_ticket::orderBy('created_at','desc')->get();
+        $customer_tickets = Customer_ticket::all();
         return view('customer_ticket.index', compact('customer_tickets'));
     }
 

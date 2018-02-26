@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Ramsey\Uuid\Uuid;
 use App\Models\Booking;
+use App\Models\Customer_ticket;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -49,6 +51,12 @@ class BookingController extends Controller
         $booking->total_bayar = $request->input('total_bayar');
         $booking->save();
 
+        $uuid4 = Uuid::uuid4();
+        $ticket = new Customer_ticket;
+        $ticket->id_booking = $booking->id;
+        $ticket->token = $uuid4->toString() . "\n";
+        $ticket->save();
+
         return redirect(route('booking.index'));
     }
 
@@ -73,7 +81,7 @@ class BookingController extends Controller
     {
         $data = Booking::findOrFail($id);
         return view('booking.edit', compact('data'));
-        
+
     }
 
     /**
@@ -99,7 +107,7 @@ class BookingController extends Controller
         $booking->save();
 
         return redirect('/booking')->with('success', 'Booking Updated');
-        
+
     }
 
     /**
