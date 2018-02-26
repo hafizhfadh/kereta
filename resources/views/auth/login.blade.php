@@ -22,7 +22,7 @@
           <div class="field">
             <label for="password" class="label">Password</label>
             <p class="control">
-              <input class="input {{$errors->has('password') ? 'is-danger' : ''}}" type="password" name="password" id="password">
+              <input class="input {{$errors->has('password') ? 'is-danger' : ''}}" type="password" name="password" id="password" placeholder="password">
             </p>
             @if ($errors->has('password'))
               <p class="help is-danger">{{$errors->first('password')}}</p>
@@ -30,7 +30,7 @@
 
           </div>
 
-          <b-checkbox name="remember" class="m-t-20">Remember Me</b-checkbox>
+          <b-checkbox name="remember" class="m-t-20"></b-checkbox>
 
           <button class="button is-success is-outlined is-fullwidth m-t-30">Log In</button>
         </form>

@@ -9,7 +9,7 @@
             </div>
             <div class="card-content table__wrapper">
                 <a href="{{ route('booking.create') }}"class="button is-light fa fa-plus"></a>
-                <table class="table is-stripped pricing__table" id="datatable">
+                <table class="table is-bordered pricing__table" id="datatable">
                     <thead>
                         <tr>
                             <th>No</th>
