@@ -103,7 +103,7 @@
             <div class="field">
               <label class="label">Pencarian Tiket</label>
               <div class="control">
-                <button class="button is-link">Cari</button>
+                <button type="submit" class="button is-link" >Cari</button>
               </div>
             </div>
           </div>

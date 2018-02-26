@@ -27,3 +27,7 @@ Route::resource('/train_schedule', 'ScheduleTrainController');
 Route::resource('/booking', 'BookingController');
 
 Route::resource('/customer', 'CustomerController');
+
+Route::get('export', 'ExcelController@Export');
+
+Route::get('downloadExcel/{type}', 'ExcelController@downloadExcel');
