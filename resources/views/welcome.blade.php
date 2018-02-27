@@ -44,7 +44,7 @@
             <div class="field">
               <label class="label">Nama Customer</label>
               <div class="control">
-                <input type="text" name="nama_customer" class="input" placeholder="e.g Hafizh Fadhlurrohman">
+                <input type="text" name="nama_customer" class="input" placeholder="Nama Customer">
               </div>
             </div>
             <div class="field">
@@ -100,13 +100,6 @@
                 </div>
               </div>
 
-<<<<<<< HEAD
-          <div class="column">
-            <div class="field">
-              <label class="label">Pencarian Tiket</label>
-              <div class="control">
-                <button type="submit" class="button is-link" >Cari</button>
-=======
               <div class="column">
                 <div class="field">
                   <div class="control">
@@ -114,7 +107,6 @@
                     <input type="text" name="jumlah_tiket" class="input" max="4">
                   </div>
                 </div>
->>>>>>> 4fa2b00fbe14868c25a30b42820636652124f9b7
               </div>
             </div>
             <div class="column">

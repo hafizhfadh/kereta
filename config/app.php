@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'Adventrip',
 
     /*
     |--------------------------------------------------------------------------
@@ -104,7 +104,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => 'base64:JGwgVYB8A9ZQk7YMYdvbffJ0rM7cpEpYTMRlvTOOuPA=',
 
     'cipher' => 'AES-256-CBC',
 

@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => 'smtp',
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org', 'smtp.gmail.com'),
+    'host' => 'smtp.mailtrap.io',
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => '465',
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com', 'android2629@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example', 'Aditia'),
+        'address' => 'dwigita0112@gmail.com',
+        'name' => 'Gita',
     ],
 
     /*
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => 'tls',
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME', 'android2629@gmail.com'),
+    'username' => '16e424e84a4b76',
 
-    'password' => env('MAIL_PASSWORD', 'aditfebri2629'),
+    'password' => 'cbf5547d88bc03',
 
     /*
     |--------------------------------------------------------------------------

@@ -29,10 +29,9 @@ Route::resource('/booking', 'BookingController');
 
 Route::resource('/customer', 'CustomerController');
 
-<<<<<<< HEAD
 Route::get('export', 'ExcelController@Export');
 
 Route::get('downloadExcel/{type}', 'ExcelController@downloadExcel');
-=======
+
 Route::resource('/customer_ticket', 'CustomerTicket');
->>>>>>> 4fa2b00fbe14868c25a30b42820636652124f9b7
+
