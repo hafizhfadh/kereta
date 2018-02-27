@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use DB;
 use App\User;
 use App\Models\Train;
+use App\Models\Train_Class;
 use App\Libraries\General;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,7 @@ class TrainController extends Controller
      */
     public function __construct()
     {
-      // $this->middleware('auth',['except' => ['index', 'show']]);
+      $this->middleware('auth');
     }
 
     public function index()
@@ -53,7 +54,17 @@ class TrainController extends Controller
       ]);
 
       // Create Train
-        $train = Train::create($request->all());
+        $train = new Train();
+        $train->train_name = $request->input('train_name');
+        $train->save();
+
+        $seat = new Train_Class();
+        $seat->train_id = $train->id;
+        $seat->exec_seat = $request->input('exec_seat');
+        $seat->bus_seat = $request->input('bus_seat');
+        $seat->eco_seat = $request->input('eco_seat');
+        $seat->price = $request->input('price');
+        $seat->save();
 
         return redirect('/train')->with('success', 'Train Created');
     }

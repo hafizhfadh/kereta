@@ -20,13 +20,13 @@ class CreateBookingTables extends Migration
             $table->string('nama_kereta');
             $table->string('stasiun_keberangkatan');
             $table->string('stasiun_kedatangan');
-            $table->time('waktu_keberangkatan');
-            $table->time('waktu_kedatangan');
+            $table->dateTime('waktu_keberangkatan');
+            $table->dateTime('waktu_pulang')->nullable();
             $table->string('jumlah_tiket');
             $table->string('tarif_pertiket');
-            $table->string('total_bayar');
+            $table->string('total_bayar')->nullable();
             $table->timestamps();
-        });       
+        });
     }
 
     /**

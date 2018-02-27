@@ -11,12 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@welcome');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/ticket/{id}', 'HomeController@ticket')->name('ticket');
+
+Route::post('/buy-ticket', 'HomeController@store')->name('buy-ticket');
 
 Route::resource('/train', 'TrainController');
 
@@ -28,4 +29,4 @@ Route::resource('/booking', 'BookingController');
 
 Route::resource('/customer', 'CustomerController');
 
-
+Route::resource('/customer_ticket', 'CustomerTicket');
