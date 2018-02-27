@@ -5,11 +5,7 @@
     <div class='carousel carousel-animated carousel-animate-slide' data-autoplay="true">
       <div class='carousel-container'>
         <div class='carousel-item has-background is-active'>
-          <img class="is-background" src="https://images.pexels.com/photos/433301/pexels-photo-433301.jpeg?w=1290&h=970&auto=compress&cs=tinysrgb" alt="" width="640" height="310" />
-          <div class="title">Adventrip Situs Pemesanan Tiket Kereta Online</div>
-        </div>
-        <div class='carousel-item has-background'>
-          <img class="is-background" src="https://images.pexels.com/photos/78791/railway-bernina-railway-lagalb-bernina-78791.jpeg?w=1290&h=970&auto=compress&cs=tinysrgb" alt="" width="640" height="310" />
+          <img class="is-background" src="{{ asset('image/gita.jpg')}}" alt="" width="640" height="310" />
           <div class="title">Satu Solusi Untuk Perjalanan Kereta Anda</div>
         </div>
         <div class='carousel-item has-background'>
@@ -44,7 +40,7 @@
             <div class="field">
               <label class="label">Nama Customer</label>
               <div class="control">
-                <input type="text" name="nama_customer" class="input" placeholder="Nama Customer">
+                <input type="text" name="nama_customer" class="input" placeholder="e.g Hafizh Fadhlurrohman">
               </div>
             </div>
             <div class="field">

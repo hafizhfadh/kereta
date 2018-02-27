@@ -13,7 +13,7 @@
       </div>
       <div class="card-content">
         <div class="columns">
-          <a href="{{ route('station.create') }}"class="button is-info">Create</a>
+          <!-- <a href="{{ route('station.create') }}"class="button is-info">Create</a> -->
         </div>
         <div>
           <table class="table is-striped is-narrow is-hoverable is-fullwidth" id="datatable">
@@ -28,7 +28,7 @@
                 <th>Action</th>
               </tr>
             </thead>
-            <tbody>
+            <!-- <tbody>
               <?php $n=1 ?>
               @foreach($data as $a)
               <tr>
@@ -55,7 +55,7 @@
               </tr>
               <?php $n++ ?>
               @endforeach
-            </tbody>
+            </tbody> -->
           </table>
         </div>
       </div>

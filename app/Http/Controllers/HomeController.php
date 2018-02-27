@@ -20,7 +20,7 @@ class HomeController extends Controller
      */
      public function __construct()
      {
-       $this->middleware(['auth','isVerified'])->except(['welcome','store']);
+       $this->middleware(['auth','isVerified'])->except(['welcome','store','ticket']);
      }
 
      public function welcome()
@@ -30,6 +30,7 @@ class HomeController extends Controller
 
      public function store(Request $request)
      {
+       
        $mytime = Carbon\Carbon::now();
        $price = Train::select('*')
                       ->where('train_name',$request->input('nama_kereta'))
@@ -60,7 +61,13 @@ class HomeController extends Controller
      public function ticket($id)
      {
        $ticket = Customer_ticket::find($id);
-       return view('ticket', compact('ticket'));
+       $a = Booking::select('jumlah_tiket','tarif_pertiket')
+                      ->where('id',$id)
+                      ->get();
+        foreach ($a as $a){
+          $price = $a->jumlah_tiket*$a->tarif_pertiket;
+        }
+       return view('ticket', compact('ticket', 'price','a'));
      }
 
     /**
