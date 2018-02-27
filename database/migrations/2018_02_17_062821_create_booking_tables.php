@@ -26,7 +26,11 @@ class CreateBookingTables extends Migration
             $table->string('tarif_pertiket');
             $table->string('total_bayar')->nullable();
             $table->timestamps();
+<<<<<<< HEAD
+        });      
+=======
         });
+>>>>>>> 4fa2b00fbe14868c25a30b42820636652124f9b7
     }
 
     /**

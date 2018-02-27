@@ -9,7 +9,7 @@
             </div>
             <div class="card-content table__wrapper">
                 <a href="{{ route('booking.create') }}"class="button is-light fa fa-plus"></a>
-                <table class="table is-stripped pricing__table" id="datatable">
+                <table class="table is-bordered pricing__table" id="datatable">
                     <thead>
                         <tr>
                             <th>No</th>
@@ -65,7 +65,16 @@
                     </tbody>
                 </table>
             </div>
+            
         </div>
+        <table widht="120%">
+        <thead>
+        <th width="40%"><a href="{{ URL::to('downloadExcel/xls') }}"><button class="button btn-warning">Download Excel xls</button></a></th>
+		<th width="40%"><a href="{{ URL::to('downloadExcel/xlsx') }}"><button class="button btn-warning">Download Excel xlsx</button></a></th>
+        <th width="40%"><a href="{{ URL::to('downloadExcel/csv') }}"><button class="button btn-warning">Download CSV</button></a><th>
+        </thead>
+        </table>
+        
     </div>
 @endsection
 

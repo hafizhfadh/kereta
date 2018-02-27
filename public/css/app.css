@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@ "UTF-8";
+=======
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+>>>>>>> ac6524facf660523c1af9c6c9582f1efa3e69558
 
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 
@@ -23483,5 +23487,36 @@ table.dataTable thead .sorting_desc_disabled:after {
 
 ul {
   list-style: none !important;
+}
+.btn-warning {
+  color: #111;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-warning:hover {
+  color: #111;
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+.btn-warning:focus,
+.btn-warning.focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
+          box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
+}
+
+.btn-warning.disabled,
+.btn-warning:disabled {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-warning:active,
+.btn-warning.active,
+.show > .btn-warning.dropdown-toggle {
+  background-color: #e0a800;
+  background-image: none;
+  border-color: #d39e00;
 }
 

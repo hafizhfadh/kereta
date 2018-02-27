@@ -8,7 +8,11 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+<<<<<<< HEAD
         <title>{{ config('app.name', 'Adventrip') }} {{ app()->version() }}</title>
+=======
+        <title>{{ config('app.name', 'AdvenTrip') }} {{ app()->version() }}</title>
+>>>>>>> ac6524facf660523c1af9c6c9582f1efa3e69558
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
